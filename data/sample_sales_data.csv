@@ -1,0 +1,901 @@
+store_id,store_name,region,date,product_category,units_sold,revenue,abv
+S01,Ameerpet Central,North,2026-01-01,Medicines,142,28400,200.0
+S01,Ameerpet Central,North,2026-01-01,FMCG,98,14700,150.0
+S01,Ameerpet Central,North,2026-01-01,Wellness,54,16200,300.0
+S01,Ameerpet Central,North,2026-01-01,Surgical,23,11500,500.0
+S01,Ameerpet Central,North,2026-01-01,Baby Care,37,9250,250.0
+S01,Ameerpet Central,North,2026-01-08,Medicines,155,31000,200.0
+S01,Ameerpet Central,North,2026-01-08,FMCG,112,16800,150.0
+S01,Ameerpet Central,North,2026-01-08,Wellness,61,18300,300.0
+S01,Ameerpet Central,North,2026-01-08,Surgical,28,14000,500.0
+S01,Ameerpet Central,North,2026-01-08,Baby Care,42,10500,250.0
+S01,Ameerpet Central,North,2026-01-15,Medicines,161,32200,200.0
+S01,Ameerpet Central,North,2026-01-15,FMCG,119,17850,150.0
+S01,Ameerpet Central,North,2026-01-15,Wellness,65,19500,300.0
+S01,Ameerpet Central,North,2026-01-15,Surgical,30,15000,500.0
+S01,Ameerpet Central,North,2026-01-15,Baby Care,45,11250,250.0
+S01,Ameerpet Central,North,2026-01-22,Medicines,148,29600,200.0
+S01,Ameerpet Central,North,2026-01-22,FMCG,104,15600,150.0
+S01,Ameerpet Central,North,2026-01-22,Wellness,58,17400,300.0
+S01,Ameerpet Central,North,2026-01-22,Surgical,25,12500,500.0
+S01,Ameerpet Central,North,2026-01-22,Baby Care,39,9750,250.0
+S01,Ameerpet Central,North,2026-01-29,Medicines,152,30400,200.0
+S01,Ameerpet Central,North,2026-01-29,FMCG,108,16200,150.0
+S01,Ameerpet Central,North,2026-01-29,Wellness,62,18600,300.0
+S01,Ameerpet Central,North,2026-01-29,Surgical,27,13500,500.0
+S01,Ameerpet Central,North,2026-01-29,Baby Care,41,10250,250.0
+S01,Ameerpet Central,North,2026-02-05,Medicines,159,31800,200.0
+S01,Ameerpet Central,North,2026-02-05,FMCG,114,17100,150.0
+S01,Ameerpet Central,North,2026-02-05,Wellness,66,19800,300.0
+S01,Ameerpet Central,North,2026-02-05,Surgical,31,15500,500.0
+S01,Ameerpet Central,North,2026-02-05,Baby Care,44,11000,250.0
+S01,Ameerpet Central,North,2026-02-12,Medicines,163,32600,200.0
+S01,Ameerpet Central,North,2026-02-12,FMCG,121,18150,150.0
+S01,Ameerpet Central,North,2026-02-12,Wellness,70,21000,300.0
+S01,Ameerpet Central,North,2026-02-12,Surgical,33,16500,500.0
+S01,Ameerpet Central,North,2026-02-12,Baby Care,47,11750,250.0
+S01,Ameerpet Central,North,2026-02-19,Medicines,155,31000,200.0
+S01,Ameerpet Central,North,2026-02-19,FMCG,116,17400,150.0
+S01,Ameerpet Central,North,2026-02-19,Wellness,67,20100,300.0
+S01,Ameerpet Central,North,2026-02-19,Surgical,30,15000,500.0
+S01,Ameerpet Central,North,2026-02-19,Baby Care,43,10750,250.0
+S01,Ameerpet Central,North,2026-02-26,Medicines,160,32000,200.0
+S01,Ameerpet Central,North,2026-02-26,FMCG,118,17700,150.0
+S01,Ameerpet Central,North,2026-02-26,Wellness,68,20400,300.0
+S01,Ameerpet Central,North,2026-02-26,Surgical,32,16000,500.0
+S01,Ameerpet Central,North,2026-02-26,Baby Care,45,11250,250.0
+S01,Ameerpet Central,North,2026-03-05,Medicines,168,33600,200.0
+S01,Ameerpet Central,North,2026-03-05,FMCG,125,18750,150.0
+S01,Ameerpet Central,North,2026-03-05,Wellness,73,21900,300.0
+S01,Ameerpet Central,North,2026-03-05,Surgical,35,17500,500.0
+S01,Ameerpet Central,North,2026-03-05,Baby Care,49,12250,250.0
+S01,Ameerpet Central,North,2026-03-12,Medicines,172,34400,200.0
+S01,Ameerpet Central,North,2026-03-12,FMCG,128,19200,150.0
+S01,Ameerpet Central,North,2026-03-12,Wellness,75,22500,300.0
+S01,Ameerpet Central,North,2026-03-12,Surgical,36,18000,500.0
+S01,Ameerpet Central,North,2026-03-12,Baby Care,51,12750,250.0
+S02,Kukatpally Hub,North,2026-01-01,Medicines,110,24200,220.0
+S02,Kukatpally Hub,North,2026-01-01,FMCG,85,14450,170.0
+S02,Kukatpally Hub,North,2026-01-01,Wellness,40,13200,330.0
+S02,Kukatpally Hub,North,2026-01-01,Surgical,18,9900,550.0
+S02,Kukatpally Hub,North,2026-01-01,Baby Care,29,7830,270.0
+S02,Kukatpally Hub,North,2026-01-08,Medicines,105,22050,210.0
+S02,Kukatpally Hub,North,2026-01-08,FMCG,80,12800,160.0
+S02,Kukatpally Hub,North,2026-01-08,Wellness,37,11470,310.0
+S02,Kukatpally Hub,North,2026-01-08,Surgical,16,8480,530.0
+S02,Kukatpally Hub,North,2026-01-08,Baby Care,27,6750,250.0
+S02,Kukatpally Hub,North,2026-01-15,Medicines,99,20592,208.0
+S02,Kukatpally Hub,North,2026-01-15,FMCG,76,11780,155.0
+S02,Kukatpally Hub,North,2026-01-15,Wellness,34,10200,300.0
+S02,Kukatpally Hub,North,2026-01-15,Surgical,15,7800,520.0
+S02,Kukatpally Hub,North,2026-01-15,Baby Care,25,6125,245.0
+S02,Kukatpally Hub,North,2026-01-22,Medicines,95,19475,205.0
+S02,Kukatpally Hub,North,2026-01-22,FMCG,72,11160,155.0
+S02,Kukatpally Hub,North,2026-01-22,Wellness,32,9600,300.0
+S02,Kukatpally Hub,North,2026-01-22,Surgical,14,7140,510.0
+S02,Kukatpally Hub,North,2026-01-22,Baby Care,24,5880,245.0
+S02,Kukatpally Hub,North,2026-01-29,Medicines,90,18270,203.0
+S02,Kukatpally Hub,North,2026-01-29,FMCG,69,10488,152.0
+S02,Kukatpally Hub,North,2026-01-29,Wellness,30,8850,295.0
+S02,Kukatpally Hub,North,2026-01-29,Surgical,13,6565,505.0
+S02,Kukatpally Hub,North,2026-01-29,Baby Care,22,5390,245.0
+S02,Kukatpally Hub,North,2026-02-05,Medicines,86,17286,201.0
+S02,Kukatpally Hub,North,2026-02-05,FMCG,65,9750,150.0
+S02,Kukatpally Hub,North,2026-02-05,Wellness,28,8120,290.0
+S02,Kukatpally Hub,North,2026-02-05,Surgical,12,5940,495.0
+S02,Kukatpally Hub,North,2026-02-05,Baby Care,21,5040,240.0
+S02,Kukatpally Hub,North,2026-02-12,Medicines,82,16400,200.0
+S02,Kukatpally Hub,North,2026-02-12,FMCG,62,9300,150.0
+S02,Kukatpally Hub,North,2026-02-12,Wellness,26,7540,290.0
+S02,Kukatpally Hub,North,2026-02-12,Surgical,11,5390,490.0
+S02,Kukatpally Hub,North,2026-02-12,Baby Care,19,4560,240.0
+S02,Kukatpally Hub,North,2026-02-19,Medicines,78,15444,198.0
+S02,Kukatpally Hub,North,2026-02-19,FMCG,59,8732,148.0
+S02,Kukatpally Hub,North,2026-02-19,Wellness,24,6840,285.0
+S02,Kukatpally Hub,North,2026-02-19,Surgical,10,4850,485.0
+S02,Kukatpally Hub,North,2026-02-19,Baby Care,18,4230,235.0
+S02,Kukatpally Hub,North,2026-02-26,Medicines,75,14625,195.0
+S02,Kukatpally Hub,North,2026-02-26,FMCG,56,8120,145.0
+S02,Kukatpally Hub,North,2026-02-26,Wellness,22,6160,280.0
+S02,Kukatpally Hub,North,2026-02-26,Surgical,9,4320,480.0
+S02,Kukatpally Hub,North,2026-02-26,Baby Care,16,3720,232.5
+S02,Kukatpally Hub,North,2026-03-05,Medicines,71,13633,192.0
+S02,Kukatpally Hub,North,2026-03-05,FMCG,53,7527,142.0
+S02,Kukatpally Hub,North,2026-03-05,Wellness,20,5500,275.0
+S02,Kukatpally Hub,North,2026-03-05,Surgical,8,3760,470.0
+S02,Kukatpally Hub,North,2026-03-05,Baby Care,15,3375,225.0
+S02,Kukatpally Hub,North,2026-03-12,Medicines,68,12784,188.0
+S02,Kukatpally Hub,North,2026-03-12,FMCG,50,7000,140.0
+S02,Kukatpally Hub,North,2026-03-12,Wellness,18,4860,270.0
+S02,Kukatpally Hub,North,2026-03-12,Surgical,7,3220,460.0
+S02,Kukatpally Hub,North,2026-03-12,Baby Care,14,3080,220.0
+S03,Secunderabad East,North,2026-01-01,Medicines,130,27300,210.0
+S03,Secunderabad East,North,2026-01-01,FMCG,95,15200,160.0
+S03,Secunderabad East,North,2026-01-01,Wellness,48,14880,310.0
+S03,Secunderabad East,North,2026-01-01,Surgical,21,11550,550.0
+S03,Secunderabad East,North,2026-01-01,Baby Care,34,8840,260.0
+S03,Secunderabad East,North,2026-01-08,Medicines,135,28350,210.0
+S03,Secunderabad East,North,2026-01-08,FMCG,100,16000,160.0
+S03,Secunderabad East,North,2026-01-08,Wellness,51,15810,310.0
+S03,Secunderabad East,North,2026-01-08,Surgical,23,12650,550.0
+S03,Secunderabad East,North,2026-01-08,Baby Care,36,9360,260.0
+S03,Secunderabad East,North,2026-01-15,Medicines,140,29400,210.0
+S03,Secunderabad East,North,2026-01-15,FMCG,105,16800,160.0
+S03,Secunderabad East,North,2026-01-15,Wellness,54,16740,310.0
+S03,Secunderabad East,North,2026-01-15,Surgical,24,13200,550.0
+S03,Secunderabad East,North,2026-01-15,Baby Care,38,9880,260.0
+S03,Secunderabad East,North,2026-01-22,Medicines,138,28980,210.0
+S03,Secunderabad East,North,2026-01-22,FMCG,103,16480,160.0
+S03,Secunderabad East,North,2026-01-22,Wellness,52,16120,310.0
+S03,Secunderabad East,North,2026-01-22,Surgical,23,12650,550.0
+S03,Secunderabad East,North,2026-01-22,Baby Care,37,9620,260.0
+S03,Secunderabad East,North,2026-01-29,Medicines,142,29820,210.0
+S03,Secunderabad East,North,2026-01-29,FMCG,107,17120,160.0
+S03,Secunderabad East,North,2026-01-29,Wellness,55,17050,310.0
+S03,Secunderabad East,North,2026-01-29,Surgical,24,13200,550.0
+S03,Secunderabad East,North,2026-01-29,Baby Care,39,10140,260.0
+S03,Secunderabad East,North,2026-02-05,Medicines,148,31080,210.0
+S03,Secunderabad East,North,2026-02-05,FMCG,111,17760,160.0
+S03,Secunderabad East,North,2026-02-05,Wellness,58,17980,310.0
+S03,Secunderabad East,North,2026-02-05,Surgical,26,14300,550.0
+S03,Secunderabad East,North,2026-02-05,Baby Care,41,10660,260.0
+S03,Secunderabad East,North,2026-02-12,Medicines,152,31920,210.0
+S03,Secunderabad East,North,2026-02-12,FMCG,115,18400,160.0
+S03,Secunderabad East,North,2026-02-12,Wellness,60,18600,310.0
+S03,Secunderabad East,North,2026-02-12,Surgical,27,14850,550.0
+S03,Secunderabad East,North,2026-02-12,Baby Care,43,11180,260.0
+S03,Secunderabad East,North,2026-02-19,Medicines,150,31500,210.0
+S03,Secunderabad East,North,2026-02-19,FMCG,113,18080,160.0
+S03,Secunderabad East,North,2026-02-19,Wellness,59,18290,310.0
+S03,Secunderabad East,North,2026-02-19,Surgical,26,14300,550.0
+S03,Secunderabad East,North,2026-02-19,Baby Care,42,10920,260.0
+S03,Secunderabad East,North,2026-02-26,Medicines,155,32550,210.0
+S03,Secunderabad East,North,2026-02-26,FMCG,117,18720,160.0
+S03,Secunderabad East,North,2026-02-26,Wellness,62,19220,310.0
+S03,Secunderabad East,North,2026-02-26,Surgical,28,15400,550.0
+S03,Secunderabad East,North,2026-02-26,Baby Care,44,11440,260.0
+S03,Secunderabad East,North,2026-03-05,Medicines,160,33600,210.0
+S03,Secunderabad East,North,2026-03-05,FMCG,121,19360,160.0
+S03,Secunderabad East,North,2026-03-05,Wellness,65,20150,310.0
+S03,Secunderabad East,North,2026-03-05,Surgical,29,15950,550.0
+S03,Secunderabad East,North,2026-03-05,Baby Care,46,11960,260.0
+S03,Secunderabad East,North,2026-03-12,Medicines,165,34650,210.0
+S03,Secunderabad East,North,2026-03-12,FMCG,124,19840,160.0
+S03,Secunderabad East,North,2026-03-12,Wellness,67,20770,310.0
+S03,Secunderabad East,North,2026-03-12,Surgical,30,16500,550.0
+S03,Secunderabad East,North,2026-03-12,Baby Care,48,12480,260.0
+S04,Banjara Hills Premium,South,2026-01-01,Medicines,180,54000,300.0
+S04,Banjara Hills Premium,South,2026-01-01,FMCG,130,26000,200.0
+S04,Banjara Hills Premium,South,2026-01-01,Wellness,90,36000,400.0
+S04,Banjara Hills Premium,South,2026-01-01,Surgical,40,26000,650.0
+S04,Banjara Hills Premium,South,2026-01-01,Baby Care,60,18000,300.0
+S04,Banjara Hills Premium,South,2026-01-08,Medicines,185,55500,300.0
+S04,Banjara Hills Premium,South,2026-01-08,FMCG,134,26800,200.0
+S04,Banjara Hills Premium,South,2026-01-08,Wellness,93,37200,400.0
+S04,Banjara Hills Premium,South,2026-01-08,Surgical,42,27300,650.0
+S04,Banjara Hills Premium,South,2026-01-08,Baby Care,62,18600,300.0
+S04,Banjara Hills Premium,South,2026-01-15,Medicines,190,57000,300.0
+S04,Banjara Hills Premium,South,2026-01-15,FMCG,138,27600,200.0
+S04,Banjara Hills Premium,South,2026-01-15,Wellness,96,38400,400.0
+S04,Banjara Hills Premium,South,2026-01-15,Surgical,43,27950,650.0
+S04,Banjara Hills Premium,South,2026-01-15,Baby Care,65,19500,300.0
+S04,Banjara Hills Premium,South,2026-01-22,Medicines,187,56100,300.0
+S04,Banjara Hills Premium,South,2026-01-22,FMCG,136,27200,200.0
+S04,Banjara Hills Premium,South,2026-01-22,Wellness,94,37600,400.0
+S04,Banjara Hills Premium,South,2026-01-22,Surgical,42,27300,650.0
+S04,Banjara Hills Premium,South,2026-01-22,Baby Care,63,18900,300.0
+S04,Banjara Hills Premium,South,2026-01-29,Medicines,192,57600,300.0
+S04,Banjara Hills Premium,South,2026-01-29,FMCG,140,28000,200.0
+S04,Banjara Hills Premium,South,2026-01-29,Wellness,98,39200,400.0
+S04,Banjara Hills Premium,South,2026-01-29,Surgical,44,28600,650.0
+S04,Banjara Hills Premium,South,2026-01-29,Baby Care,66,19800,300.0
+S04,Banjara Hills Premium,South,2026-02-05,Medicines,196,58800,300.0
+S04,Banjara Hills Premium,South,2026-02-05,FMCG,143,28600,200.0
+S04,Banjara Hills Premium,South,2026-02-05,Wellness,100,40000,400.0
+S04,Banjara Hills Premium,South,2026-02-05,Surgical,45,29250,650.0
+S04,Banjara Hills Premium,South,2026-02-05,Baby Care,68,20400,300.0
+S04,Banjara Hills Premium,South,2026-02-12,Medicines,200,60000,300.0
+S04,Banjara Hills Premium,South,2026-02-12,FMCG,147,29400,200.0
+S04,Banjara Hills Premium,South,2026-02-12,Wellness,104,41600,400.0
+S04,Banjara Hills Premium,South,2026-02-12,Surgical,47,30550,650.0
+S04,Banjara Hills Premium,South,2026-02-12,Baby Care,70,21000,300.0
+S04,Banjara Hills Premium,South,2026-02-19,Medicines,195,58500,300.0
+S04,Banjara Hills Premium,South,2026-02-19,FMCG,144,28800,200.0
+S04,Banjara Hills Premium,South,2026-02-19,Wellness,102,40800,400.0
+S04,Banjara Hills Premium,South,2026-02-19,Surgical,46,29900,650.0
+S04,Banjara Hills Premium,South,2026-02-19,Baby Care,69,20700,300.0
+S04,Banjara Hills Premium,South,2026-02-26,Medicines,202,60600,300.0
+S04,Banjara Hills Premium,South,2026-02-26,FMCG,149,29800,200.0
+S04,Banjara Hills Premium,South,2026-02-26,Wellness,106,42400,400.0
+S04,Banjara Hills Premium,South,2026-02-26,Surgical,48,31200,650.0
+S04,Banjara Hills Premium,South,2026-02-26,Baby Care,72,21600,300.0
+S04,Banjara Hills Premium,South,2026-03-05,Medicines,208,62400,300.0
+S04,Banjara Hills Premium,South,2026-03-05,FMCG,153,30600,200.0
+S04,Banjara Hills Premium,South,2026-03-05,Wellness,110,44000,400.0
+S04,Banjara Hills Premium,South,2026-03-05,Surgical,50,32500,650.0
+S04,Banjara Hills Premium,South,2026-03-05,Baby Care,74,22200,300.0
+S04,Banjara Hills Premium,South,2026-03-12,Medicines,214,64200,300.0
+S04,Banjara Hills Premium,South,2026-03-12,FMCG,158,31600,200.0
+S04,Banjara Hills Premium,South,2026-03-12,Wellness,114,45600,400.0
+S04,Banjara Hills Premium,South,2026-03-12,Surgical,52,33800,650.0
+S04,Banjara Hills Premium,South,2026-03-12,Baby Care,77,23100,300.0
+S05,Jubilee Hills Select,South,2026-01-01,Medicines,165,44550,270.0
+S05,Jubilee Hills Select,South,2026-01-01,FMCG,118,21240,180.0
+S05,Jubilee Hills Select,South,2026-01-01,Wellness,72,25200,350.0
+S05,Jubilee Hills Select,South,2026-01-01,Surgical,32,19200,600.0
+S05,Jubilee Hills Select,South,2026-01-01,Baby Care,50,13500,270.0
+S05,Jubilee Hills Select,South,2026-01-08,Medicines,168,45360,270.0
+S05,Jubilee Hills Select,South,2026-01-08,FMCG,121,21780,180.0
+S05,Jubilee Hills Select,South,2026-01-08,Wellness,74,25900,350.0
+S05,Jubilee Hills Select,South,2026-01-08,Surgical,33,19800,600.0
+S05,Jubilee Hills Select,South,2026-01-08,Baby Care,52,14040,270.0
+S05,Jubilee Hills Select,South,2026-01-15,Medicines,172,46440,270.0
+S05,Jubilee Hills Select,South,2026-01-15,FMCG,124,22320,180.0
+S05,Jubilee Hills Select,South,2026-01-15,Wellness,77,26950,350.0
+S05,Jubilee Hills Select,South,2026-01-15,Surgical,34,20400,600.0
+S05,Jubilee Hills Select,South,2026-01-15,Baby Care,53,14310,270.0
+S05,Jubilee Hills Select,South,2026-01-22,Medicines,159,42930,270.0
+S05,Jubilee Hills Select,South,2026-01-22,FMCG,114,19380,170.0
+S05,Jubilee Hills Select,South,2026-01-22,Wellness,68,22440,330.0
+S05,Jubilee Hills Select,South,2026-01-22,Surgical,29,16530,570.0
+S05,Jubilee Hills Select,South,2026-01-22,Baby Care,47,12455,265.0
+S05,Jubilee Hills Select,South,2026-01-29,Medicines,163,43245,265.3
+S05,Jubilee Hills Select,South,2026-01-29,FMCG,116,19140,165.0
+S05,Jubilee Hills Select,South,2026-01-29,Wellness,69,22425,325.0
+S05,Jubilee Hills Select,South,2026-01-29,Surgical,30,16800,560.0
+S05,Jubilee Hills Select,South,2026-01-29,Baby Care,48,12720,265.0
+S05,Jubilee Hills Select,South,2026-02-05,Medicines,158,41370,261.8
+S05,Jubilee Hills Select,South,2026-02-05,FMCG,112,18480,165.0
+S05,Jubilee Hills Select,South,2026-02-05,Wellness,66,21120,320.0
+S05,Jubilee Hills Select,South,2026-02-05,Surgical,28,15400,550.0
+S05,Jubilee Hills Select,South,2026-02-05,Baby Care,46,11960,260.0
+S05,Jubilee Hills Select,South,2026-02-12,Medicines,154,39424,256.0
+S05,Jubilee Hills Select,South,2026-02-12,FMCG,109,17804,163.3
+S05,Jubilee Hills Select,South,2026-02-12,Wellness,63,19845,315.0
+S05,Jubilee Hills Select,South,2026-02-12,Surgical,27,14580,540.0
+S05,Jubilee Hills Select,South,2026-02-12,Baby Care,44,11308,257.0
+S05,Jubilee Hills Select,South,2026-02-19,Medicines,150,37800,252.0
+S05,Jubilee Hills Select,South,2026-02-19,FMCG,106,17066,161.0
+S05,Jubilee Hills Select,South,2026-02-19,Wellness,61,18910,310.0
+S05,Jubilee Hills Select,South,2026-02-19,Surgical,26,13780,530.0
+S05,Jubilee Hills Select,South,2026-02-19,Baby Care,43,10750,250.0
+S05,Jubilee Hills Select,South,2026-02-26,Medicines,147,36015,245.0
+S05,Jubilee Hills Select,South,2026-02-26,FMCG,103,16068,156.0
+S05,Jubilee Hills Select,South,2026-02-26,Wellness,59,17700,300.0
+S05,Jubilee Hills Select,South,2026-02-26,Surgical,25,12875,515.0
+S05,Jubilee Hills Select,South,2026-02-26,Baby Care,41,9840,240.0
+S05,Jubilee Hills Select,South,2026-03-05,Medicines,143,33748,236.0
+S05,Jubilee Hills Select,South,2026-03-05,FMCG,100,14900,149.0
+S05,Jubilee Hills Select,South,2026-03-05,Wellness,56,16520,295.0
+S05,Jubilee Hills Select,South,2026-03-05,Surgical,23,11500,500.0
+S05,Jubilee Hills Select,South,2026-03-05,Baby Care,39,8892,228.0
+S05,Jubilee Hills Select,South,2026-03-12,Medicines,138,31878,231.0
+S05,Jubilee Hills Select,South,2026-03-12,FMCG,97,14259,147.0
+S05,Jubilee Hills Select,South,2026-03-12,Wellness,53,15335,289.3
+S05,Jubilee Hills Select,South,2026-03-12,Surgical,22,10780,490.0
+S05,Jubilee Hills Select,South,2026-03-12,Baby Care,37,8251,223.0
+S06,Himayatnagar Clinic,South,2026-01-01,Medicines,120,22800,190.0
+S06,Himayatnagar Clinic,South,2026-01-01,FMCG,88,13200,150.0
+S06,Himayatnagar Clinic,South,2026-01-01,Wellness,44,12320,280.0
+S06,Himayatnagar Clinic,South,2026-01-01,Surgical,19,9500,500.0
+S06,Himayatnagar Clinic,South,2026-01-01,Baby Care,31,7130,230.0
+S06,Himayatnagar Clinic,South,2026-01-08,Medicines,123,23370,190.0
+S06,Himayatnagar Clinic,South,2026-01-08,FMCG,91,13650,150.0
+S06,Himayatnagar Clinic,South,2026-01-08,Wellness,46,12880,280.0
+S06,Himayatnagar Clinic,South,2026-01-08,Surgical,20,10000,500.0
+S06,Himayatnagar Clinic,South,2026-01-08,Baby Care,33,7590,230.0
+S06,Himayatnagar Clinic,South,2026-01-15,Medicines,128,24320,190.0
+S06,Himayatnagar Clinic,South,2026-01-15,FMCG,94,14100,150.0
+S06,Himayatnagar Clinic,South,2026-01-15,Wellness,48,13440,280.0
+S06,Himayatnagar Clinic,South,2026-01-15,Surgical,21,10500,500.0
+S06,Himayatnagar Clinic,South,2026-01-15,Baby Care,35,8050,230.0
+S06,Himayatnagar Clinic,South,2026-01-22,Medicines,130,24700,190.0
+S06,Himayatnagar Clinic,South,2026-01-22,FMCG,96,14400,150.0
+S06,Himayatnagar Clinic,South,2026-01-22,Wellness,49,13720,280.0
+S06,Himayatnagar Clinic,South,2026-01-22,Surgical,21,10500,500.0
+S06,Himayatnagar Clinic,South,2026-01-22,Baby Care,36,8280,230.0
+S06,Himayatnagar Clinic,South,2026-01-29,Medicines,133,25270,190.0
+S06,Himayatnagar Clinic,South,2026-01-29,FMCG,98,14700,150.0
+S06,Himayatnagar Clinic,South,2026-01-29,Wellness,51,14280,280.0
+S06,Himayatnagar Clinic,South,2026-01-29,Surgical,22,11000,500.0
+S06,Himayatnagar Clinic,South,2026-01-29,Baby Care,37,8510,230.0
+S06,Himayatnagar Clinic,South,2026-02-05,Medicines,136,25840,190.0
+S06,Himayatnagar Clinic,South,2026-02-05,FMCG,100,15000,150.0
+S06,Himayatnagar Clinic,South,2026-02-05,Wellness,53,14840,280.0
+S06,Himayatnagar Clinic,South,2026-02-05,Surgical,23,11500,500.0
+S06,Himayatnagar Clinic,South,2026-02-05,Baby Care,38,8740,230.0
+S06,Himayatnagar Clinic,South,2026-02-12,Medicines,139,26410,190.0
+S06,Himayatnagar Clinic,South,2026-02-12,FMCG,103,15450,150.0
+S06,Himayatnagar Clinic,South,2026-02-12,Wellness,55,15400,280.0
+S06,Himayatnagar Clinic,South,2026-02-12,Surgical,24,12000,500.0
+S06,Himayatnagar Clinic,South,2026-02-12,Baby Care,40,9200,230.0
+S06,Himayatnagar Clinic,South,2026-02-19,Medicines,141,26790,190.0
+S06,Himayatnagar Clinic,South,2026-02-19,FMCG,105,15750,150.0
+S06,Himayatnagar Clinic,South,2026-02-19,Wellness,56,15680,280.0
+S06,Himayatnagar Clinic,South,2026-02-19,Surgical,24,12000,500.0
+S06,Himayatnagar Clinic,South,2026-02-19,Baby Care,41,9430,230.0
+S06,Himayatnagar Clinic,South,2026-02-26,Medicines,144,27360,190.0
+S06,Himayatnagar Clinic,South,2026-02-26,FMCG,107,16050,150.0
+S06,Himayatnagar Clinic,South,2026-02-26,Wellness,58,16240,280.0
+S06,Himayatnagar Clinic,South,2026-02-26,Surgical,25,12500,500.0
+S06,Himayatnagar Clinic,South,2026-02-26,Baby Care,42,9660,230.0
+S06,Himayatnagar Clinic,South,2026-03-05,Medicines,147,27930,190.0
+S06,Himayatnagar Clinic,South,2026-03-05,FMCG,110,16500,150.0
+S06,Himayatnagar Clinic,South,2026-03-05,Wellness,60,16800,280.0
+S06,Himayatnagar Clinic,South,2026-03-05,Surgical,26,13000,500.0
+S06,Himayatnagar Clinic,South,2026-03-05,Baby Care,44,10120,230.0
+S06,Himayatnagar Clinic,South,2026-03-12,Medicines,150,28500,190.0
+S06,Himayatnagar Clinic,South,2026-03-12,FMCG,112,16800,150.0
+S06,Himayatnagar Clinic,South,2026-03-12,Wellness,62,17360,280.0
+S06,Himayatnagar Clinic,South,2026-03-12,Surgical,27,13500,500.0
+S06,Himayatnagar Clinic,South,2026-03-12,Baby Care,45,10350,230.0
+S07,Gachibowli Tech,West,2026-01-01,Medicines,200,46000,230.0
+S07,Gachibowli Tech,West,2026-01-01,FMCG,150,28500,190.0
+S07,Gachibowli Tech,West,2026-01-01,Wellness,80,28000,350.0
+S07,Gachibowli Tech,West,2026-01-01,Surgical,35,21000,600.0
+S07,Gachibowli Tech,West,2026-01-01,Baby Care,55,15125,275.0
+S07,Gachibowli Tech,West,2026-01-08,Medicines,208,47840,230.0
+S07,Gachibowli Tech,West,2026-01-08,FMCG,156,29640,190.0
+S07,Gachibowli Tech,West,2026-01-08,Wellness,84,29400,350.0
+S07,Gachibowli Tech,West,2026-01-08,Surgical,37,22200,600.0
+S07,Gachibowli Tech,West,2026-01-08,Baby Care,58,15950,275.0
+S07,Gachibowli Tech,West,2026-01-15,Medicines,215,49450,230.0
+S07,Gachibowli Tech,West,2026-01-15,FMCG,162,30780,190.0
+S07,Gachibowli Tech,West,2026-01-15,Wellness,88,30800,350.0
+S07,Gachibowli Tech,West,2026-01-15,Surgical,38,22800,600.0
+S07,Gachibowli Tech,West,2026-01-15,Baby Care,60,16500,275.0
+S07,Gachibowli Tech,West,2026-01-22,Medicines,220,50600,230.0
+S07,Gachibowli Tech,West,2026-01-22,FMCG,167,31730,190.0
+S07,Gachibowli Tech,West,2026-01-22,Wellness,91,31850,350.0
+S07,Gachibowli Tech,West,2026-01-22,Surgical,39,23400,600.0
+S07,Gachibowli Tech,West,2026-01-22,Baby Care,62,17050,275.0
+S07,Gachibowli Tech,West,2026-01-29,Medicines,226,51980,230.0
+S07,Gachibowli Tech,West,2026-01-29,FMCG,172,32680,190.0
+S07,Gachibowli Tech,West,2026-01-29,Wellness,95,33250,350.0
+S07,Gachibowli Tech,West,2026-01-29,Surgical,41,24600,600.0
+S07,Gachibowli Tech,West,2026-01-29,Baby Care,64,17600,275.0
+S07,Gachibowli Tech,West,2026-02-05,Medicines,232,53360,230.0
+S07,Gachibowli Tech,West,2026-02-05,FMCG,177,33630,190.0
+S07,Gachibowli Tech,West,2026-02-05,Wellness,99,34650,350.0
+S07,Gachibowli Tech,West,2026-02-05,Surgical,43,25800,600.0
+S07,Gachibowli Tech,West,2026-02-05,Baby Care,67,18425,275.0
+S07,Gachibowli Tech,West,2026-02-12,Medicines,238,54740,230.0
+S07,Gachibowli Tech,West,2026-02-12,FMCG,182,34580,190.0
+S07,Gachibowli Tech,West,2026-02-12,Wellness,103,36050,350.0
+S07,Gachibowli Tech,West,2026-02-12,Surgical,45,27000,600.0
+S07,Gachibowli Tech,West,2026-02-12,Baby Care,69,18975,275.0
+S07,Gachibowli Tech,West,2026-02-19,Medicines,244,56120,230.0
+S07,Gachibowli Tech,West,2026-02-19,FMCG,187,35530,190.0
+S07,Gachibowli Tech,West,2026-02-19,Wellness,107,37450,350.0
+S07,Gachibowli Tech,West,2026-02-19,Surgical,47,28200,600.0
+S07,Gachibowli Tech,West,2026-02-19,Baby Care,72,19800,275.0
+S07,Gachibowli Tech,West,2026-02-26,Medicines,250,57500,230.0
+S07,Gachibowli Tech,West,2026-02-26,FMCG,192,36480,190.0
+S07,Gachibowli Tech,West,2026-02-26,Wellness,111,38850,350.0
+S07,Gachibowli Tech,West,2026-02-26,Surgical,49,29400,600.0
+S07,Gachibowli Tech,West,2026-02-26,Baby Care,74,20350,275.0
+S07,Gachibowli Tech,West,2026-03-05,Medicines,258,59340,230.0
+S07,Gachibowli Tech,West,2026-03-05,FMCG,198,37620,190.0
+S07,Gachibowli Tech,West,2026-03-05,Wellness,116,40600,350.0
+S07,Gachibowli Tech,West,2026-03-05,Surgical,51,30600,600.0
+S07,Gachibowli Tech,West,2026-03-05,Baby Care,77,21175,275.0
+S07,Gachibowli Tech,West,2026-03-12,Medicines,265,60950,230.0
+S07,Gachibowli Tech,West,2026-03-12,FMCG,204,38760,190.0
+S07,Gachibowli Tech,West,2026-03-12,Wellness,120,42000,350.0
+S07,Gachibowli Tech,West,2026-03-12,Surgical,53,31800,600.0
+S07,Gachibowli Tech,West,2026-03-12,Baby Care,80,22000,275.0
+S08,HITEC City Express,West,2026-01-01,Medicines,188,43240,230.0
+S08,HITEC City Express,West,2026-01-01,FMCG,140,26600,190.0
+S08,HITEC City Express,West,2026-01-01,Wellness,75,26250,350.0
+S08,HITEC City Express,West,2026-01-01,Surgical,33,19800,600.0
+S08,HITEC City Express,West,2026-01-01,Baby Care,51,14025,275.0
+S08,HITEC City Express,West,2026-01-08,Medicines,193,44390,230.0
+S08,HITEC City Express,West,2026-01-08,FMCG,145,27550,190.0
+S08,HITEC City Express,West,2026-01-08,Wellness,78,27300,350.0
+S08,HITEC City Express,West,2026-01-08,Surgical,35,21000,600.0
+S08,HITEC City Express,West,2026-01-08,Baby Care,53,14575,275.0
+S08,HITEC City Express,West,2026-01-15,Medicines,199,45770,230.0
+S08,HITEC City Express,West,2026-01-15,FMCG,150,28500,190.0
+S08,HITEC City Express,West,2026-01-15,Wellness,81,28350,350.0
+S08,HITEC City Express,West,2026-01-15,Surgical,36,21600,600.0
+S08,HITEC City Express,West,2026-01-15,Baby Care,55,15125,275.0
+S08,HITEC City Express,West,2026-01-22,Medicines,205,47150,230.0
+S08,HITEC City Express,West,2026-01-22,FMCG,155,29450,190.0
+S08,HITEC City Express,West,2026-01-22,Wellness,84,29400,350.0
+S08,HITEC City Express,West,2026-01-22,Surgical,38,22800,600.0
+S08,HITEC City Express,West,2026-01-22,Baby Care,57,15675,275.0
+S08,HITEC City Express,West,2026-01-29,Medicines,210,48300,230.0
+S08,HITEC City Express,West,2026-01-29,FMCG,160,30400,190.0
+S08,HITEC City Express,West,2026-01-29,Wellness,87,30450,350.0
+S08,HITEC City Express,West,2026-01-29,Surgical,39,23400,600.0
+S08,HITEC City Express,West,2026-01-29,Baby Care,59,16225,275.0
+S08,HITEC City Express,West,2026-02-05,Medicines,216,49680,230.0
+S08,HITEC City Express,West,2026-02-05,FMCG,165,31350,190.0
+S08,HITEC City Express,West,2026-02-05,Wellness,90,31500,350.0
+S08,HITEC City Express,West,2026-02-05,Surgical,41,24600,600.0
+S08,HITEC City Express,West,2026-02-05,Baby Care,62,17050,275.0
+S08,HITEC City Express,West,2026-02-12,Medicines,220,50600,230.0
+S08,HITEC City Express,West,2026-02-12,FMCG,169,32110,190.0
+S08,HITEC City Express,West,2026-02-12,Wellness,93,32550,350.0
+S08,HITEC City Express,West,2026-02-12,Surgical,42,25200,600.0
+S08,HITEC City Express,West,2026-02-12,Baby Care,64,17600,275.0
+S08,HITEC City Express,West,2026-02-19,Medicines,225,51750,230.0
+S08,HITEC City Express,West,2026-02-19,FMCG,173,32870,190.0
+S08,HITEC City Express,West,2026-02-19,Wellness,96,33600,350.0
+S08,HITEC City Express,West,2026-02-19,Surgical,44,26400,600.0
+S08,HITEC City Express,West,2026-02-19,Baby Care,66,18150,275.0
+S08,HITEC City Express,West,2026-02-26,Medicines,230,52900,230.0
+S08,HITEC City Express,West,2026-02-26,FMCG,177,33630,190.0
+S08,HITEC City Express,West,2026-02-26,Wellness,99,34650,350.0
+S08,HITEC City Express,West,2026-02-26,Surgical,46,27600,600.0
+S08,HITEC City Express,West,2026-02-26,Baby Care,68,18700,275.0
+S08,HITEC City Express,West,2026-03-05,Medicines,236,54280,230.0
+S08,HITEC City Express,West,2026-03-05,FMCG,182,34580,190.0
+S08,HITEC City Express,West,2026-03-05,Wellness,103,36050,350.0
+S08,HITEC City Express,West,2026-03-05,Surgical,48,28800,600.0
+S08,HITEC City Express,West,2026-03-05,Baby Care,71,19525,275.0
+S08,HITEC City Express,West,2026-03-12,Medicines,242,55660,230.0
+S08,HITEC City Express,West,2026-03-12,FMCG,187,35530,190.0
+S08,HITEC City Express,West,2026-03-12,Wellness,107,37450,350.0
+S08,HITEC City Express,West,2026-03-12,Surgical,50,30000,600.0
+S08,HITEC City Express,West,2026-03-12,Baby Care,74,20350,275.0
+S09,Madhapur Wellness,West,2026-01-01,Medicines,145,32625,225.0
+S09,Madhapur Wellness,West,2026-01-01,FMCG,110,19800,180.0
+S09,Madhapur Wellness,West,2026-01-01,Wellness,92,34960,380.0
+S09,Madhapur Wellness,West,2026-01-01,Surgical,25,15000,600.0
+S09,Madhapur Wellness,West,2026-01-01,Baby Care,48,13440,280.0
+S09,Madhapur Wellness,West,2026-01-08,Medicines,150,33750,225.0
+S09,Madhapur Wellness,West,2026-01-08,FMCG,114,20520,180.0
+S09,Madhapur Wellness,West,2026-01-08,Wellness,96,36480,380.0
+S09,Madhapur Wellness,West,2026-01-08,Surgical,26,15600,600.0
+S09,Madhapur Wellness,West,2026-01-08,Baby Care,50,14000,280.0
+S09,Madhapur Wellness,West,2026-01-15,Medicines,155,34875,225.0
+S09,Madhapur Wellness,West,2026-01-15,FMCG,118,21240,180.0
+S09,Madhapur Wellness,West,2026-01-15,Wellness,100,38000,380.0
+S09,Madhapur Wellness,West,2026-01-15,Surgical,27,16200,600.0
+S09,Madhapur Wellness,West,2026-01-15,Baby Care,52,14560,280.0
+S09,Madhapur Wellness,West,2026-01-22,Medicines,160,36000,225.0
+S09,Madhapur Wellness,West,2026-01-22,FMCG,122,21960,180.0
+S09,Madhapur Wellness,West,2026-01-22,Wellness,104,39520,380.0
+S09,Madhapur Wellness,West,2026-01-22,Surgical,28,16800,600.0
+S09,Madhapur Wellness,West,2026-01-22,Baby Care,54,15120,280.0
+S09,Madhapur Wellness,West,2026-01-29,Medicines,165,37125,225.0
+S09,Madhapur Wellness,West,2026-01-29,FMCG,125,22500,180.0
+S09,Madhapur Wellness,West,2026-01-29,Wellness,108,41040,380.0
+S09,Madhapur Wellness,West,2026-01-29,Surgical,29,17400,600.0
+S09,Madhapur Wellness,West,2026-01-29,Baby Care,56,15680,280.0
+S09,Madhapur Wellness,West,2026-02-05,Medicines,170,38250,225.0
+S09,Madhapur Wellness,West,2026-02-05,FMCG,129,23220,180.0
+S09,Madhapur Wellness,West,2026-02-05,Wellness,113,42940,380.0
+S09,Madhapur Wellness,West,2026-02-05,Surgical,30,18000,600.0
+S09,Madhapur Wellness,West,2026-02-05,Baby Care,58,16240,280.0
+S09,Madhapur Wellness,West,2026-02-12,Medicines,176,39600,225.0
+S09,Madhapur Wellness,West,2026-02-12,FMCG,133,23940,180.0
+S09,Madhapur Wellness,West,2026-02-12,Wellness,118,44840,380.0
+S09,Madhapur Wellness,West,2026-02-12,Surgical,32,19200,600.0
+S09,Madhapur Wellness,West,2026-02-12,Baby Care,61,17080,280.0
+S09,Madhapur Wellness,West,2026-02-19,Medicines,182,40950,225.0
+S09,Madhapur Wellness,West,2026-02-19,FMCG,137,24660,180.0
+S09,Madhapur Wellness,West,2026-02-19,Wellness,123,46740,380.0
+S09,Madhapur Wellness,West,2026-02-19,Surgical,33,19800,600.0
+S09,Madhapur Wellness,West,2026-02-19,Baby Care,63,17640,280.0
+S09,Madhapur Wellness,West,2026-02-26,Medicines,188,42300,225.0
+S09,Madhapur Wellness,West,2026-02-26,FMCG,141,25380,180.0
+S09,Madhapur Wellness,West,2026-02-26,Wellness,128,48640,380.0
+S09,Madhapur Wellness,West,2026-02-26,Surgical,34,20400,600.0
+S09,Madhapur Wellness,West,2026-02-26,Baby Care,65,18200,280.0
+S09,Madhapur Wellness,West,2026-03-05,Medicines,194,43650,225.0
+S09,Madhapur Wellness,West,2026-03-05,FMCG,146,26280,180.0
+S09,Madhapur Wellness,West,2026-03-05,Wellness,133,50540,380.0
+S09,Madhapur Wellness,West,2026-03-05,Surgical,36,21600,600.0
+S09,Madhapur Wellness,West,2026-03-05,Baby Care,68,19040,280.0
+S09,Madhapur Wellness,West,2026-03-12,Medicines,200,45000,225.0
+S09,Madhapur Wellness,West,2026-03-12,FMCG,150,27000,180.0
+S09,Madhapur Wellness,West,2026-03-12,Wellness,138,52440,380.0
+S09,Madhapur Wellness,West,2026-03-12,Surgical,37,22200,600.0
+S09,Madhapur Wellness,West,2026-03-12,Baby Care,70,19600,280.0
+S10,Kondapur General,West,2026-01-01,Medicines,132,26400,200.0
+S10,Kondapur General,West,2026-01-01,FMCG,98,14700,150.0
+S10,Kondapur General,West,2026-01-01,Wellness,55,16500,300.0
+S10,Kondapur General,West,2026-01-01,Surgical,22,11000,500.0
+S10,Kondapur General,West,2026-01-01,Baby Care,36,9000,250.0
+S10,Kondapur General,West,2026-01-08,Medicines,128,25472,199.0
+S10,Kondapur General,West,2026-01-08,FMCG,95,14060,148.0
+S10,Kondapur General,West,2026-01-08,Wellness,53,15581,294.0
+S10,Kondapur General,West,2026-01-08,Surgical,21,10332,492.0
+S10,Kondapur General,West,2026-01-08,Baby Care,35,8593,245.5
+S10,Kondapur General,West,2026-01-15,Medicines,122,23790,195.0
+S10,Kondapur General,West,2026-01-15,FMCG,90,13140,146.0
+S10,Kondapur General,West,2026-01-15,Wellness,50,14350,287.0
+S10,Kondapur General,West,2026-01-15,Surgical,20,9600,480.0
+S10,Kondapur General,West,2026-01-15,Baby Care,33,7986,242.0
+S10,Kondapur General,West,2026-01-22,Medicines,118,22420,190.0
+S10,Kondapur General,West,2026-01-22,FMCG,87,12528,144.0
+S10,Kondapur General,West,2026-01-22,Wellness,48,13440,280.0
+S10,Kondapur General,West,2026-01-22,Surgical,19,8930,470.0
+S10,Kondapur General,West,2026-01-22,Baby Care,32,7616,238.0
+S10,Kondapur General,West,2026-01-29,Medicines,115,21505,187.0
+S10,Kondapur General,West,2026-01-29,FMCG,84,11844,141.0
+S10,Kondapur General,West,2026-01-29,Wellness,46,12604,274.0
+S10,Kondapur General,West,2026-01-29,Surgical,18,8280,460.0
+S10,Kondapur General,West,2026-01-29,Baby Care,30,6990,233.0
+S10,Kondapur General,West,2026-02-05,Medicines,111,20424,184.0
+S10,Kondapur General,West,2026-02-05,FMCG,81,11259,139.0
+S10,Kondapur General,West,2026-02-05,Wellness,44,11880,270.0
+S10,Kondapur General,West,2026-02-05,Surgical,17,7650,450.0
+S10,Kondapur General,West,2026-02-05,Baby Care,29,6612,228.0
+S10,Kondapur General,West,2026-02-12,Medicines,107,19366,181.0
+S10,Kondapur General,West,2026-02-12,FMCG,78,10686,137.0
+S10,Kondapur General,West,2026-02-12,Wellness,42,11130,265.0
+S10,Kondapur General,West,2026-02-12,Surgical,16,6960,435.0
+S10,Kondapur General,West,2026-02-12,Baby Care,27,6021,223.0
+S10,Kondapur General,West,2026-02-19,Medicines,103,18025,175.0
+S10,Kondapur General,West,2026-02-19,FMCG,75,10200,136.0
+S10,Kondapur General,West,2026-02-19,Wellness,40,10440,261.0
+S10,Kondapur General,West,2026-02-19,Surgical,15,6450,430.0
+S10,Kondapur General,West,2026-02-19,Baby Care,26,5668,218.0
+S10,Kondapur General,West,2026-02-26,Medicines,99,17028,172.0
+S10,Kondapur General,West,2026-02-26,FMCG,72,9648,134.0
+S10,Kondapur General,West,2026-02-26,Wellness,38,9804,258.0
+S10,Kondapur General,West,2026-02-26,Surgical,14,5880,420.0
+S10,Kondapur General,West,2026-02-26,Baby Care,24,5136,214.0
+S10,Kondapur General,West,2026-03-05,Medicines,94,15698,167.0
+S10,Kondapur General,West,2026-03-05,FMCG,69,9108,132.0
+S10,Kondapur General,West,2026-03-05,Wellness,36,9108,253.0
+S10,Kondapur General,West,2026-03-05,Surgical,13,5330,410.0
+S10,Kondapur General,West,2026-03-05,Baby Care,22,4598,209.0
+S10,Kondapur General,West,2026-03-12,Medicines,90,14670,163.0
+S10,Kondapur General,West,2026-03-12,FMCG,66,8580,130.0
+S10,Kondapur General,West,2026-03-12,Wellness,34,8466,249.0
+S10,Kondapur General,West,2026-03-12,Surgical,12,4800,400.0
+S10,Kondapur General,West,2026-03-12,Baby Care,21,4284,204.0
+S01,Ameerpet Central,North,2026-03-19,Medicines,175,35192.5,201.1
+S01,Ameerpet Central,North,2026-03-19,FMCG,130,19604.0,150.8
+S01,Ameerpet Central,North,2026-03-19,Wellness,76,22921.6,301.6
+S01,Ameerpet Central,North,2026-03-19,Surgical,37,18599.9,502.7
+S01,Ameerpet Central,North,2026-03-19,Baby Care,52,13072.8,251.4
+S02,Kukatpally Hub,North,2026-03-19,Medicines,65,12070.5,185.7
+S02,Kukatpally Hub,North,2026-03-19,FMCG,48,6638.4,138.3
+S02,Kukatpally Hub,North,2026-03-19,Wellness,17,4535.6,266.8
+S02,Kukatpally Hub,North,2026-03-19,Surgical,7,3181.5,454.5
+S02,Kukatpally Hub,North,2026-03-19,Baby Care,13,2826.2,217.4
+S03,Secunderabad East,North,2026-03-19,Medicines,167,35220.3,210.9
+S03,Secunderabad East,North,2026-03-19,FMCG,126,20248.2,160.7
+S03,Secunderabad East,North,2026-03-19,Wellness,68,21175.2,311.4
+S03,Secunderabad East,North,2026-03-19,Surgical,30,16575.0,552.5
+S03,Secunderabad East,North,2026-03-19,Baby Care,49,12798.8,261.2
+S04,Banjara Hills Premium,South,2026-03-19,Medicines,219,66138.0,302.0
+S04,Banjara Hills Premium,South,2026-03-19,FMCG,161,32409.3,201.3
+S04,Banjara Hills Premium,South,2026-03-19,Wellness,117,47104.2,402.6
+S04,Banjara Hills Premium,South,2026-03-19,Surgical,53,34677.9,654.3
+S04,Banjara Hills Premium,South,2026-03-19,Baby Care,79,23858.0,302.0
+S05,Jubilee Hills Select,South,2026-03-19,Medicines,134,30699.4,229.1
+S05,Jubilee Hills Select,South,2026-03-19,FMCG,94,13705.2,145.8
+S05,Jubilee Hills Select,South,2026-03-19,Wellness,52,14918.8,286.9
+S05,Jubilee Hills Select,South,2026-03-19,Surgical,21,10203.9,485.9
+S05,Jubilee Hills Select,South,2026-03-19,Baby Care,36,7959.6,221.1
+S06,Himayatnagar Clinic,South,2026-03-19,Medicines,152,28986.4,190.7
+S06,Himayatnagar Clinic,South,2026-03-19,FMCG,113,17006.5,150.5
+S06,Himayatnagar Clinic,South,2026-03-19,Wellness,63,17703.0,281.0
+S06,Himayatnagar Clinic,South,2026-03-19,Surgical,27,13548.6,501.8
+S06,Himayatnagar Clinic,South,2026-03-19,Baby Care,46,10616.8,230.8
+S07,Gachibowli Tech,West,2026-03-19,Medicines,272,63022.4,231.7
+S07,Gachibowli Tech,West,2026-03-19,FMCG,209,40002.6,191.4
+S07,Gachibowli Tech,West,2026-03-19,Wellness,123,43369.8,352.6
+S07,Gachibowli Tech,West,2026-03-19,Surgical,54,32643.0,604.5
+S07,Gachibowli Tech,West,2026-03-19,Baby Care,82,22722.2,277.1
+S08,HITEC City Express,West,2026-03-19,Medicines,247,57155.8,231.4
+S08,HITEC City Express,West,2026-03-19,FMCG,191,36500.1,191.1
+S08,HITEC City Express,West,2026-03-19,Wellness,109,38378.9,352.1
+S08,HITEC City Express,West,2026-03-19,Surgical,51,30783.6,603.6
+S08,HITEC City Express,West,2026-03-19,Baby Care,75,20745.0,276.6
+S09,Madhapur Wellness,West,2026-03-19,Medicines,204,46144.8,226.2
+S09,Madhapur Wellness,West,2026-03-19,FMCG,153,27693.0,181.0
+S09,Madhapur Wellness,West,2026-03-19,Wellness,140,53494.0,382.1
+S09,Madhapur Wellness,West,2026-03-19,Surgical,38,22921.6,603.2
+S09,Madhapur Wellness,West,2026-03-19,Baby Care,71,19986.5,281.5
+S10,Kondapur General,West,2026-03-19,Medicines,86,13828.8,160.8
+S10,Kondapur General,West,2026-03-19,FMCG,63,8076.6,128.2
+S10,Kondapur General,West,2026-03-19,Wellness,32,7859.2,245.6
+S10,Kondapur General,West,2026-03-19,Surgical,11,4340.6,394.6
+S10,Kondapur General,West,2026-03-19,Baby Care,20,4024.0,201.2
+S01,Ameerpet Central,North,2026-03-26,Medicines,178,35991.6,202.2
+S01,Ameerpet Central,North,2026-03-26,FMCG,132,20011.2,151.6
+S01,Ameerpet Central,North,2026-03-26,Wellness,77,23346.4,303.2
+S01,Ameerpet Central,North,2026-03-26,Surgical,38,19205.2,505.4
+S01,Ameerpet Central,North,2026-03-26,Baby Care,53,13398.4,252.8
+S02,Kukatpally Hub,North,2026-03-26,Medicines,62,11377.0,183.5
+S02,Kukatpally Hub,North,2026-03-26,FMCG,46,6283.6,136.6
+S02,Kukatpally Hub,North,2026-03-26,Wellness,16,4217.6,263.6
+S02,Kukatpally Hub,North,2026-03-26,Surgical,7,3143.0,449.0
+S02,Kukatpally Hub,North,2026-03-26,Baby Care,12,2577.6,214.8
+S03,Secunderabad East,North,2026-03-26,Medicines,170,36006.0,211.8
+S03,Secunderabad East,North,2026-03-26,FMCG,128,20659.2,161.4
+S03,Secunderabad East,North,2026-03-26,Wellness,69,21583.2,312.8
+S03,Secunderabad East,North,2026-03-26,Surgical,30,16650.0,555.0
+S03,Secunderabad East,North,2026-03-26,Baby Care,50,13120.0,262.4
+S04,Banjara Hills Premium,South,2026-03-26,Medicines,224,68096.0,304.0
+S04,Banjara Hills Premium,South,2026-03-26,FMCG,165,33429.0,202.6
+S04,Banjara Hills Premium,South,2026-03-26,Wellness,120,48636.0,405.3
+S04,Banjara Hills Premium,South,2026-03-26,Surgical,54,35564.4,658.6
+S04,Banjara Hills Premium,South,2026-03-26,Baby Care,81,24624.0,304.0
+S05,Jubilee Hills Select,South,2026-03-26,Medicines,130,29536.0,227.2
+S05,Jubilee Hills Select,South,2026-03-26,FMCG,91,13158.6,144.6
+S05,Jubilee Hills Select,South,2026-03-26,Wellness,51,14509.5,284.5
+S05,Jubilee Hills Select,South,2026-03-26,Surgical,20,9636.0,481.8
+S05,Jubilee Hills Select,South,2026-03-26,Baby Care,35,7672.0,219.2
+S06,Himayatnagar Clinic,South,2026-03-26,Medicines,154,29475.6,191.4
+S06,Himayatnagar Clinic,South,2026-03-26,FMCG,114,17214.0,151.0
+S06,Himayatnagar Clinic,South,2026-03-26,Wellness,64,18048.0,282.0
+S06,Himayatnagar Clinic,South,2026-03-26,Surgical,27,13597.2,503.6
+S06,Himayatnagar Clinic,South,2026-03-26,Baby Care,47,10885.2,231.6
+S07,Gachibowli Tech,West,2026-03-26,Medicines,279,65118.6,233.4
+S07,Gachibowli Tech,West,2026-03-26,FMCG,214,41259.2,192.8
+S07,Gachibowli Tech,West,2026-03-26,Wellness,126,44755.2,355.2
+S07,Gachibowli Tech,West,2026-03-26,Surgical,55,33495.0,609.0
+S07,Gachibowli Tech,West,2026-03-26,Baby Care,84,23452.8,279.2
+S08,HITEC City Express,West,2026-03-26,Medicines,252,58665.6,232.8
+S08,HITEC City Express,West,2026-03-26,FMCG,195,37479.0,192.2
+S08,HITEC City Express,West,2026-03-26,Wellness,111,39316.2,354.2
+S08,HITEC City Express,West,2026-03-26,Surgical,52,31574.4,607.2
+S08,HITEC City Express,West,2026-03-26,Baby Care,76,21150.8,278.3
+S09,Madhapur Wellness,West,2026-03-26,Medicines,208,47299.2,227.4
+S09,Madhapur Wellness,West,2026-03-26,FMCG,156,28392.0,182.0
+S09,Madhapur Wellness,West,2026-03-26,Wellness,143,54940.6,384.2
+S09,Madhapur Wellness,West,2026-03-26,Surgical,39,23653.5,606.5
+S09,Madhapur Wellness,West,2026-03-26,Baby Care,72,20376.0,283.0
+S10,Kondapur General,West,2026-03-26,Medicines,82,13005.2,158.6
+S10,Kondapur General,West,2026-03-26,FMCG,60,7590.0,126.5
+S10,Kondapur General,West,2026-03-26,Wellness,31,7511.3,242.3
+S10,Kondapur General,West,2026-03-26,Surgical,11,4282.3,389.3
+S10,Kondapur General,West,2026-03-26,Baby Care,19,3771.5,198.5
+S01,Ameerpet Central,North,2026-04-02,Medicines,181,36797.3,203.3
+S01,Ameerpet Central,North,2026-04-02,FMCG,134,20421.6,152.4
+S01,Ameerpet Central,North,2026-04-02,Wellness,78,23774.4,304.8
+S01,Ameerpet Central,North,2026-04-02,Surgical,39,19815.9,508.1
+S01,Ameerpet Central,North,2026-04-02,Baby Care,54,13726.8,254.2
+S02,Kukatpally Hub,North,2026-04-02,Medicines,60,10878.0,181.3
+S02,Kukatpally Hub,North,2026-04-02,FMCG,44,5940.0,135.0
+S02,Kukatpally Hub,North,2026-04-02,Wellness,15,3906.0,260.4
+S02,Kukatpally Hub,North,2026-04-02,Surgical,7,3105.2,443.6
+S02,Kukatpally Hub,North,2026-04-02,Baby Care,12,2546.4,212.2
+S03,Secunderabad East,North,2026-04-02,Medicines,173,36814.4,212.8
+S03,Secunderabad East,North,2026-04-02,FMCG,130,21073.0,162.1
+S03,Secunderabad East,North,2026-04-02,Wellness,70,21994.0,314.2
+S03,Secunderabad East,North,2026-04-02,Surgical,30,16725.0,557.5
+S03,Secunderabad East,North,2026-04-02,Baby Care,51,13443.6,263.6
+S04,Banjara Hills Premium,South,2026-04-02,Medicines,229,70074.0,306.0
+S04,Banjara Hills Premium,South,2026-04-02,FMCG,169,34459.1,203.9
+S04,Banjara Hills Premium,South,2026-04-02,Wellness,123,50184.0,408.0
+S04,Banjara Hills Premium,South,2026-04-02,Surgical,55,36459.5,662.9
+S04,Banjara Hills Premium,South,2026-04-02,Baby Care,83,25398.0,306.0
+S05,Jubilee Hills Select,South,2026-04-02,Medicines,126,28387.8,225.3
+S05,Jubilee Hills Select,South,2026-04-02,FMCG,88,12619.2,143.4
+S05,Jubilee Hills Select,South,2026-04-02,Wellness,50,14105.0,282.1
+S05,Jubilee Hills Select,South,2026-04-02,Surgical,19,9078.2,477.8
+S05,Jubilee Hills Select,South,2026-04-02,Baby Care,34,7391.6,217.4
+S06,Himayatnagar Clinic,South,2026-04-02,Medicines,156,29967.6,192.1
+S06,Himayatnagar Clinic,South,2026-04-02,FMCG,115,17422.5,151.5
+S06,Himayatnagar Clinic,South,2026-04-02,Wellness,65,18395.0,283.0
+S06,Himayatnagar Clinic,South,2026-04-02,Surgical,27,13645.8,505.4
+S06,Himayatnagar Clinic,South,2026-04-02,Baby Care,48,11155.2,232.4
+S07,Gachibowli Tech,West,2026-04-02,Medicines,286,67267.2,235.2
+S07,Gachibowli Tech,West,2026-04-02,FMCG,219,42529.8,194.2
+S07,Gachibowli Tech,West,2026-04-02,Wellness,129,46169.1,357.9
+S07,Gachibowli Tech,West,2026-04-02,Surgical,56,34361.6,613.6
+S07,Gachibowli Tech,West,2026-04-02,Baby Care,86,24191.8,281.3
+S08,HITEC City Express,West,2026-04-02,Medicines,257,60189.4,234.2
+S08,HITEC City Express,West,2026-04-02,FMCG,199,38486.6,193.4
+S08,HITEC City Express,West,2026-04-02,Wellness,113,40261.9,356.3
+S08,HITEC City Express,West,2026-04-02,Surgical,53,32372.4,610.8
+S08,HITEC City Express,West,2026-04-02,Baby Care,78,21840.0,280.0
+S09,Madhapur Wellness,West,2026-04-02,Medicines,212,48463.2,228.6
+S09,Madhapur Wellness,West,2026-04-02,FMCG,159,29097.0,183.0
+S09,Madhapur Wellness,West,2026-04-02,Wellness,146,56399.8,386.3
+S09,Madhapur Wellness,West,2026-04-02,Surgical,40,24392.0,609.8
+S09,Madhapur Wellness,West,2026-04-02,Baby Care,73,20768.5,284.5
+S10,Kondapur General,West,2026-04-02,Medicines,78,12207.0,156.5
+S10,Kondapur General,West,2026-04-02,FMCG,57,7113.6,124.8
+S10,Kondapur General,West,2026-04-02,Wellness,30,7170.0,239.0
+S10,Kondapur General,West,2026-04-02,Surgical,11,4224.0,384.0
+S10,Kondapur General,West,2026-04-02,Baby Care,18,3524.4,195.8
+S01,Ameerpet Central,North,2026-04-09,Medicines,184,37609.6,204.4
+S01,Ameerpet Central,North,2026-04-09,FMCG,136,20835.2,153.2
+S01,Ameerpet Central,North,2026-04-09,Wellness,79,24205.6,306.4
+S01,Ameerpet Central,North,2026-04-09,Surgical,40,20432.0,510.8
+S01,Ameerpet Central,North,2026-04-09,Baby Care,55,14058.0,255.6
+S02,Kukatpally Hub,North,2026-04-09,Medicines,58,10387.8,179.1
+S02,Kukatpally Hub,North,2026-04-09,FMCG,42,5602.8,133.4
+S02,Kukatpally Hub,North,2026-04-09,Wellness,14,3602.2,257.3
+S02,Kukatpally Hub,North,2026-04-09,Surgical,7,3068.1,438.3
+S02,Kukatpally Hub,North,2026-04-09,Baby Care,12,2516.4,209.7
+S03,Secunderabad East,North,2026-04-09,Medicines,176,37628.8,213.8
+S03,Secunderabad East,North,2026-04-09,FMCG,132,21489.6,162.8
+S03,Secunderabad East,North,2026-04-09,Wellness,71,22407.6,315.6
+S03,Secunderabad East,North,2026-04-09,Surgical,30,16800.0,560.0
+S03,Secunderabad East,North,2026-04-09,Baby Care,52,13769.6,264.8
+S04,Banjara Hills Premium,South,2026-04-09,Medicines,234,72072.0,308.0
+S04,Banjara Hills Premium,South,2026-04-09,FMCG,173,35499.6,205.2
+S04,Banjara Hills Premium,South,2026-04-09,Wellness,126,51748.2,410.7
+S04,Banjara Hills Premium,South,2026-04-09,Surgical,56,37368.8,667.3
+S04,Banjara Hills Premium,South,2026-04-09,Baby Care,85,26180.0,308.0
+S05,Jubilee Hills Select,South,2026-04-09,Medicines,122,27254.8,223.4
+S05,Jubilee Hills Select,South,2026-04-09,FMCG,86,12229.2,142.2
+S05,Jubilee Hills Select,South,2026-04-09,Wellness,49,13705.3,279.7
+S05,Jubilee Hills Select,South,2026-04-09,Surgical,18,8528.4,473.8
+S05,Jubilee Hills Select,South,2026-04-09,Baby Care,33,7114.8,215.6
+S06,Himayatnagar Clinic,South,2026-04-09,Medicines,158,30462.4,192.8
+S06,Himayatnagar Clinic,South,2026-04-09,FMCG,116,17632.0,152.0
+S06,Himayatnagar Clinic,South,2026-04-09,Wellness,66,18744.0,284.0
+S06,Himayatnagar Clinic,South,2026-04-09,Surgical,27,13694.4,507.2
+S06,Himayatnagar Clinic,South,2026-04-09,Baby Care,49,11426.8,233.2
+S07,Gachibowli Tech,West,2026-04-09,Medicines,293,69441.0,237.0
+S07,Gachibowli Tech,West,2026-04-09,FMCG,224,43836.8,195.7
+S07,Gachibowli Tech,West,2026-04-09,Wellness,132,47599.2,360.6
+S07,Gachibowli Tech,West,2026-04-09,Surgical,57,35237.4,618.2
+S07,Gachibowli Tech,West,2026-04-09,Baby Care,88,24939.2,283.4
+S08,HITEC City Express,West,2026-04-09,Medicines,262,61727.2,235.6
+S08,HITEC City Express,West,2026-04-09,FMCG,203,39503.8,194.6
+S08,HITEC City Express,West,2026-04-09,Wellness,115,41216.0,358.4
+S08,HITEC City Express,West,2026-04-09,Surgical,54,33183.0,614.5
+S08,HITEC City Express,West,2026-04-09,Baby Care,80,22536.0,281.7
+S09,Madhapur Wellness,West,2026-04-09,Medicines,216,49636.8,229.8
+S09,Madhapur Wellness,West,2026-04-09,FMCG,162,29808.0,184.0
+S09,Madhapur Wellness,West,2026-04-09,Wellness,149,57871.6,388.4
+S09,Madhapur Wellness,West,2026-04-09,Surgical,41,25137.1,613.1
+S09,Madhapur Wellness,West,2026-04-09,Baby Care,74,21164.0,286.0
+S10,Kondapur General,West,2026-04-09,Medicines,74,11425.6,154.4
+S10,Kondapur General,West,2026-04-09,FMCG,54,6647.4,123.1
+S10,Kondapur General,West,2026-04-09,Wellness,29,6838.2,235.8
+S10,Kondapur General,West,2026-04-09,Surgical,11,4166.8,378.8
+S10,Kondapur General,West,2026-04-09,Baby Care,17,3284.4,193.2
+S01,Ameerpet Central,North,2026-04-16,Medicines,187,38428.5,205.5
+S01,Ameerpet Central,North,2026-04-16,FMCG,138,21252.0,154.0
+S01,Ameerpet Central,North,2026-04-16,Wellness,80,24648.0,308.1
+S01,Ameerpet Central,North,2026-04-16,Surgical,41,21057.6,513.6
+S01,Ameerpet Central,North,2026-04-16,Baby Care,56,14392.0,257.0
+S02,Kukatpally Hub,North,2026-04-16,Medicines,56,9912.0,177.0
+S02,Kukatpally Hub,North,2026-04-16,FMCG,40,5272.0,131.8
+S02,Kukatpally Hub,North,2026-04-16,Wellness,13,3304.6,254.2
+S02,Kukatpally Hub,North,2026-04-16,Surgical,7,3031.0,433.0
+S02,Kukatpally Hub,North,2026-04-16,Baby Care,12,2486.4,207.2
+S03,Secunderabad East,North,2026-04-16,Medicines,179,38449.2,214.8
+S03,Secunderabad East,North,2026-04-16,FMCG,134,21909.0,163.5
+S03,Secunderabad East,North,2026-04-16,Wellness,72,22824.0,317.0
+S03,Secunderabad East,North,2026-04-16,Surgical,30,16875.0,562.5
+S03,Secunderabad East,North,2026-04-16,Baby Care,53,14098.0,266.0
+S04,Banjara Hills Premium,South,2026-04-16,Medicines,239,74090.0,310.0
+S04,Banjara Hills Premium,South,2026-04-16,FMCG,177,36568.2,206.6
+S04,Banjara Hills Premium,South,2026-04-16,Wellness,129,53328.6,413.4
+S04,Banjara Hills Premium,South,2026-04-16,Surgical,57,38286.9,671.7
+S04,Banjara Hills Premium,South,2026-04-16,Baby Care,87,26970.0,310.0
+S05,Jubilee Hills Select,South,2026-04-16,Medicines,119,26358.5,221.5
+S05,Jubilee Hills Select,South,2026-04-16,FMCG,84,11844.0,141.0
+S05,Jubilee Hills Select,South,2026-04-16,Wellness,48,13315.2,277.4
+S05,Jubilee Hills Select,South,2026-04-16,Surgical,17,7986.6,469.8
+S05,Jubilee Hills Select,South,2026-04-16,Baby Care,32,6841.6,213.8
+S06,Himayatnagar Clinic,South,2026-04-16,Medicines,160,30960.0,193.5
+S06,Himayatnagar Clinic,South,2026-04-16,FMCG,117,17842.5,152.5
+S06,Himayatnagar Clinic,South,2026-04-16,Wellness,67,19095.0,285.0
+S06,Himayatnagar Clinic,South,2026-04-16,Surgical,27,13743.0,509.0
+S06,Himayatnagar Clinic,South,2026-04-16,Baby Care,50,11700.0,234.0
+S07,Gachibowli Tech,West,2026-04-16,Medicines,300,71640.0,238.8
+S07,Gachibowli Tech,West,2026-04-16,FMCG,230,45356.0,197.2
+S07,Gachibowli Tech,West,2026-04-16,Wellness,135,49045.5,363.3
+S07,Gachibowli Tech,West,2026-04-16,Surgical,58,36122.4,622.8
+S07,Gachibowli Tech,West,2026-04-16,Baby Care,90,25695.0,285.5
+S08,HITEC City Express,West,2026-04-16,Medicines,267,63279.0,237.0
+S08,HITEC City Express,West,2026-04-16,FMCG,207,40530.6,195.8
+S08,HITEC City Express,West,2026-04-16,Wellness,117,42190.2,360.6
+S08,HITEC City Express,West,2026-04-16,Surgical,55,34001.0,618.2
+S08,HITEC City Express,West,2026-04-16,Baby Care,82,23238.8,283.4
+S09,Madhapur Wellness,West,2026-04-16,Medicines,220,50820.0,231.0
+S09,Madhapur Wellness,West,2026-04-16,FMCG,165,30525.0,185.0
+S09,Madhapur Wellness,West,2026-04-16,Wellness,152,59356.0,390.5
+S09,Madhapur Wellness,West,2026-04-16,Surgical,42,25888.8,616.4
+S09,Madhapur Wellness,West,2026-04-16,Baby Care,75,21562.5,287.5
+S10,Kondapur General,West,2026-04-16,Medicines,71,10813.3,152.3
+S10,Kondapur General,West,2026-04-16,FMCG,52,6312.8,121.4
+S10,Kondapur General,West,2026-04-16,Wellness,28,6512.8,232.6
+S10,Kondapur General,West,2026-04-16,Surgical,11,4110.7,373.7
+S10,Kondapur General,West,2026-04-16,Baby Care,16,3049.6,190.6
+S01,Ameerpet Central,North,2026-04-23,Medicines,190,39254.0,206.6
+S01,Ameerpet Central,North,2026-04-23,FMCG,140,21672.0,154.8
+S01,Ameerpet Central,North,2026-04-23,Wellness,81,25093.8,309.8
+S01,Ameerpet Central,North,2026-04-23,Surgical,42,21688.8,516.4
+S01,Ameerpet Central,North,2026-04-23,Baby Care,57,14728.8,258.4
+S02,Kukatpally Hub,North,2026-04-23,Medicines,54,9444.6,174.9
+S02,Kukatpally Hub,North,2026-04-23,FMCG,38,4947.6,130.2
+S02,Kukatpally Hub,North,2026-04-23,Wellness,12,3013.2,251.1
+S02,Kukatpally Hub,North,2026-04-23,Surgical,7,2994.6,427.8
+S02,Kukatpally Hub,North,2026-04-23,Baby Care,12,2456.4,204.7
+S03,Secunderabad East,North,2026-04-23,Medicines,182,39275.6,215.8
+S03,Secunderabad East,North,2026-04-23,FMCG,136,22331.2,164.2
+S03,Secunderabad East,North,2026-04-23,Wellness,73,23243.2,318.4
+S03,Secunderabad East,North,2026-04-23,Surgical,30,16950.0,565.0
+S03,Secunderabad East,North,2026-04-23,Baby Care,54,14428.8,267.2
+S04,Banjara Hills Premium,South,2026-04-23,Medicines,244,76128.0,312.0
+S04,Banjara Hills Premium,South,2026-04-23,FMCG,181,37648.0,208.0
+S04,Banjara Hills Premium,South,2026-04-23,Wellness,132,54925.2,416.1
+S04,Banjara Hills Premium,South,2026-04-23,Surgical,58,39213.8,676.1
+S04,Banjara Hills Premium,South,2026-04-23,Baby Care,89,27768.0,312.0
+S05,Jubilee Hills Select,South,2026-04-23,Medicines,116,25473.6,219.6
+S05,Jubilee Hills Select,South,2026-04-23,FMCG,82,11463.6,139.8
+S05,Jubilee Hills Select,South,2026-04-23,Wellness,47,12929.7,275.1
+S05,Jubilee Hills Select,South,2026-04-23,Surgical,17,7920.3,465.9
+S05,Jubilee Hills Select,South,2026-04-23,Baby Care,31,6572.0,212.0
+S06,Himayatnagar Clinic,South,2026-04-23,Medicines,162,31460.4,194.2
+S06,Himayatnagar Clinic,South,2026-04-23,FMCG,118,18054.0,153.0
+S06,Himayatnagar Clinic,South,2026-04-23,Wellness,68,19448.0,286.0
+S06,Himayatnagar Clinic,South,2026-04-23,Surgical,27,13791.6,510.8
+S06,Himayatnagar Clinic,South,2026-04-23,Baby Care,51,11974.8,234.8
+S07,Gachibowli Tech,West,2026-04-23,Medicines,308,74104.8,240.6
+S07,Gachibowli Tech,West,2026-04-23,FMCG,236,46893.2,198.7
+S07,Gachibowli Tech,West,2026-04-23,Wellness,138,50508.0,366.0
+S07,Gachibowli Tech,West,2026-04-23,Surgical,59,37022.5,627.5
+S07,Gachibowli Tech,West,2026-04-23,Baby Care,92,26459.2,287.6
+S08,HITEC City Express,West,2026-04-23,Medicines,272,64844.8,238.4
+S08,HITEC City Express,West,2026-04-23,FMCG,211,41567.0,197.0
+S08,HITEC City Express,West,2026-04-23,Wellness,119,43173.2,362.8
+S08,HITEC City Express,West,2026-04-23,Surgical,56,34826.4,621.9
+S08,HITEC City Express,West,2026-04-23,Baby Care,84,23948.4,285.1
+S09,Madhapur Wellness,West,2026-04-23,Medicines,224,52012.8,232.2
+S09,Madhapur Wellness,West,2026-04-23,FMCG,168,31248.0,186.0
+S09,Madhapur Wellness,West,2026-04-23,Wellness,155,60853.0,392.6
+S09,Madhapur Wellness,West,2026-04-23,Surgical,43,26647.1,619.7
+S09,Madhapur Wellness,West,2026-04-23,Baby Care,76,21971.6,289.1
+S10,Kondapur General,West,2026-04-23,Medicines,68,10213.6,150.2
+S10,Kondapur General,West,2026-04-23,FMCG,50,5990.0,119.8
+S10,Kondapur General,West,2026-04-23,Wellness,27,6196.5,229.5
+S10,Kondapur General,West,2026-04-23,Surgical,11,4055.7,368.7
+S10,Kondapur General,West,2026-04-23,Baby Care,15,2820.0,188.0
+S01,Ameerpet Central,North,2026-04-30,Medicines,193,40086.1,207.7
+S01,Ameerpet Central,North,2026-04-30,FMCG,143,22250.8,155.6
+S01,Ameerpet Central,North,2026-04-30,Wellness,82,25543.0,311.5
+S01,Ameerpet Central,North,2026-04-30,Surgical,43,22325.6,519.2
+S01,Ameerpet Central,North,2026-04-30,Baby Care,58,15068.4,259.8
+S02,Kukatpally Hub,North,2026-04-30,Medicines,52,8985.6,172.8
+S02,Kukatpally Hub,North,2026-04-30,FMCG,36,4629.6,128.6
+S02,Kukatpally Hub,North,2026-04-30,Wellness,12,2977.2,248.1
+S02,Kukatpally Hub,North,2026-04-30,Surgical,7,2958.9,422.7
+S02,Kukatpally Hub,North,2026-04-30,Baby Care,12,2426.4,202.2
+S03,Secunderabad East,North,2026-04-30,Medicines,185,40108.0,216.8
+S03,Secunderabad East,North,2026-04-30,FMCG,138,22756.2,164.9
+S03,Secunderabad East,North,2026-04-30,Wellness,74,23665.2,319.8
+S03,Secunderabad East,North,2026-04-30,Surgical,30,17025.0,567.5
+S03,Secunderabad East,North,2026-04-30,Baby Care,55,14762.0,268.4
+S04,Banjara Hills Premium,South,2026-04-30,Medicines,249,78210.9,314.1
+S04,Banjara Hills Premium,South,2026-04-30,FMCG,185,38739.0,209.4
+S04,Banjara Hills Premium,South,2026-04-30,Wellness,135,56538.0,418.8
+S04,Banjara Hills Premium,South,2026-04-30,Surgical,59,40155.4,680.6
+S04,Banjara Hills Premium,South,2026-04-30,Baby Care,91,28583.1,314.1
+S05,Jubilee Hills Select,South,2026-04-30,Medicines,113,24611.4,217.8
+S05,Jubilee Hills Select,South,2026-04-30,FMCG,80,11088.0,138.6
+S05,Jubilee Hills Select,South,2026-04-30,Wellness,46,12548.8,272.8
+S05,Jubilee Hills Select,South,2026-04-30,Surgical,17,7854.0,462.0
+S05,Jubilee Hills Select,South,2026-04-30,Baby Care,30,6306.0,210.2
+S06,Himayatnagar Clinic,South,2026-04-30,Medicines,164,31963.6,194.9
+S06,Himayatnagar Clinic,South,2026-04-30,FMCG,119,18278.4,153.6
+S06,Himayatnagar Clinic,South,2026-04-30,Wellness,69,19803.0,287.0
+S06,Himayatnagar Clinic,South,2026-04-30,Surgical,27,13840.2,512.6
+S06,Himayatnagar Clinic,South,2026-04-30,Baby Care,52,12251.2,235.6
+S07,Gachibowli Tech,West,2026-04-30,Medicines,316,76598.4,242.4
+S07,Gachibowli Tech,West,2026-04-30,FMCG,242,48448.4,200.2
+S07,Gachibowli Tech,West,2026-04-30,Wellness,141,51986.7,368.7
+S07,Gachibowli Tech,West,2026-04-30,Surgical,60,37932.0,632.2
+S07,Gachibowli Tech,West,2026-04-30,Baby Care,94,27241.2,289.8
+S08,HITEC City Express,West,2026-04-30,Medicines,277,66424.6,239.8
+S08,HITEC City Express,West,2026-04-30,FMCG,215,42613.0,198.2
+S08,HITEC City Express,West,2026-04-30,Wellness,121,44165.0,365.0
+S08,HITEC City Express,West,2026-04-30,Surgical,57,35659.2,625.6
+S08,HITEC City Express,West,2026-04-30,Baby Care,86,24664.8,286.8
+S09,Madhapur Wellness,West,2026-04-30,Medicines,228,53238.0,233.5
+S09,Madhapur Wellness,West,2026-04-30,FMCG,171,31977.0,187.0
+S09,Madhapur Wellness,West,2026-04-30,Wellness,158,62362.6,394.7
+S09,Madhapur Wellness,West,2026-04-30,Surgical,44,27412.0,623.0
+S09,Madhapur Wellness,West,2026-04-30,Baby Care,77,22383.9,290.7
+S10,Kondapur General,West,2026-04-30,Medicines,65,9633.0,148.2
+S10,Kondapur General,West,2026-04-30,FMCG,48,5673.6,118.2
+S10,Kondapur General,West,2026-04-30,Wellness,26,5886.4,226.4
+S10,Kondapur General,West,2026-04-30,Surgical,11,4000.7,363.7
+S10,Kondapur General,West,2026-04-30,Baby Care,14,2597.0,185.5

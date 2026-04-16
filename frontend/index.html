@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RetailIQ — AI Sales Analyst</title>
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:        #0f1117;
+      --surface:   #1a1d27;
+      --border:    #2d3148;
+      --accent:    #6c63ff;
+      --accent2:   #48cae4;
+      --text:      #e2e8f0;
+      --muted:     #8892a4;
+      --success:   #4ade80;
+      --warning:   #fbbf24;
+      --danger:    #f87171;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ── Header ── */
+    header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 16px 28px;
+      border-bottom: 1px solid var(--border);
+      background: var(--surface);
+    }
+    header .logo { font-size: 22px; font-weight: 700; color: var(--accent); }
+    header .tagline { font-size: 13px; color: var(--muted); }
+
+    /* ── Layout ── */
+    .layout {
+      display: flex;
+      flex: 1;
+      overflow: hidden;
+      height: calc(100vh - 57px);
+    }
+
+    /* ── Sidebar ── */
+    .sidebar {
+      width: 260px;
+      border-right: 1px solid var(--border);
+      background: var(--surface);
+      display: flex;
+      flex-direction: column;
+      padding: 16px;
+      gap: 8px;
+      overflow-y: auto;
+    }
+    .sidebar h3 { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); margin-bottom: 4px; }
+    .sample-query {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 10px 12px;
+      font-size: 13px;
+      color: var(--text);
+      cursor: pointer;
+      transition: border-color 0.15s;
+      text-align: left;
+      width: 100%;
+    }
+    .sample-query:hover { border-color: var(--accent); color: var(--accent2); }
+
+    /* ── Main ── */
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .chat-area {
+      flex: 1;
+      overflow-y: auto;
+      padding: 24px 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    /* ── Messages ── */
+    .message { display: flex; gap: 12px; max-width: 860px; }
+    .message.user { flex-direction: row-reverse; align-self: flex-end; }
+    .avatar {
+      width: 36px; height: 36px;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 16px; flex-shrink: 0;
+    }
+    .avatar.ai   { background: linear-gradient(135deg, var(--accent), var(--accent2)); }
+    .avatar.user { background: #374151; }
+
+    .bubble {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px 18px;
+      font-size: 14px;
+      line-height: 1.65;
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+    .message.user .bubble { background: #1e2a45; border-color: #2d4070; }
+
+    /* ── Tool pills ── */
+    .tool-pill {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: #1c1f2e;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 3px 10px;
+      font-size: 11px;
+      color: var(--muted);
+      margin-top: 8px;
+      margin-right: 6px;
+    }
+    .tool-pill .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent2); }
+
+    /* ── Input bar ── */
+    .input-bar {
+      border-top: 1px solid var(--border);
+      padding: 16px 28px;
+      background: var(--surface);
+      display: flex;
+      gap: 10px;
+      align-items: flex-end;
+    }
+    .input-bar textarea {
+      flex: 1;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 12px 14px;
+      color: var(--text);
+      font-size: 14px;
+      resize: none;
+      min-height: 48px;
+      max-height: 160px;
+      outline: none;
+      font-family: inherit;
+      transition: border-color 0.15s;
+    }
+    .input-bar textarea:focus { border-color: var(--accent); }
+    .input-bar textarea::placeholder { color: var(--muted); }
+    .send-btn {
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      padding: 12px 20px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: opacity 0.15s;
+      white-space: nowrap;
+    }
+    .send-btn:disabled { opacity: 0.45; cursor: not-allowed; }
+    .send-btn:hover:not(:disabled) { opacity: 0.85; }
+
+    /* ── Spinner ── */
+    .spinner {
+      width: 18px; height: 18px;
+      border: 2px solid var(--border);
+      border-top-color: var(--accent2);
+      border-radius: 50%;
+      animation: spin 0.7s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* ── Welcome card ── */
+    .welcome {
+      margin: auto;
+      text-align: center;
+      max-width: 480px;
+      padding: 40px;
+    }
+    .welcome h2 { font-size: 26px; margin-bottom: 12px; }
+    .welcome p  { color: var(--muted); font-size: 14px; line-height: 1.7; }
+
+    /* ── Stats bar ── */
+    .stats-bar {
+      display: flex;
+      gap: 12px;
+      padding: 10px 28px;
+      border-bottom: 1px solid var(--border);
+      font-size: 12px;
+      color: var(--muted);
+      background: var(--surface);
+      overflow-x: auto;
+    }
+    .stat-chip {
+      display: flex; align-items: center; gap: 6px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 4px 12px;
+      white-space: nowrap;
+    }
+    .stat-chip strong { color: var(--text); }
+  </style>
+</head>
+<body>
+<div id="root"></div>
+
+<script type="text/babel">
+const { useState, useRef, useEffect } = React;
+
+const API_BASE = window.RETAILIQ_API || "http://localhost:8000";
+
+const SAMPLE_QUERIES = [
+  "Which stores have declining ABV this month?",
+  "Compare North vs South region revenue in February",
+  "What are the top 3 stores by Wellness category sales?",
+  "Show me stores where Medicines revenue dropped week-over-week",
+  "Which store had the highest ABV in January?",
+  "What's the revenue trend for Gachibowli Tech in Q1?",
+  "Are there any stores showing growth across all categories?",
+  "Which region sells the most Baby Care products?",
+];
+
+function ToolPill({ tool }) {
+  return (
+    <span className="tool-pill">
+      <span className="dot" />
+      {tool}
+    </span>
+  );
+}
+
+function Message({ msg }) {
+  const isUser = msg.role === "user";
+  return (
+    <div className={`message ${isUser ? "user" : "ai"}`}>
+      <div className={`avatar ${isUser ? "user" : "ai"}`}>
+        {isUser ? "👤" : "🤖"}
+      </div>
+      <div>
+        <div className="bubble">{msg.content}</div>
+        {msg.toolCalls && msg.toolCalls.length > 0 && (
+          <div style={{ marginTop: 6 }}>
+            {msg.toolCalls.map((tc, i) => (
+              <ToolPill key={i} tool={tc.tool} />
+            ))}
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
+function Thinking() {
+  return (
+    <div className="message ai">
+      <div className="avatar ai">🤖</div>
+      <div className="bubble" style={{ display: "flex", alignItems: "center", gap: 10 }}>
+        <div className="spinner" />
+        <span style={{ color: "var(--muted)", fontSize: 13 }}>Analysing your data…</span>
+      </div>
+    </div>
+  );
+}
+
+function StatChip({ label, value }) {
+  return (
+    <div className="stat-chip">
+      {label}: <strong>{value}</strong>
+    </div>
+  );
+}
+
+function App() {
+  const [messages, setMessages]   = useState([]);
+  const [input, setInput]         = useState("");
+  const [loading, setLoading]     = useState(false);
+  const [summary, setSummary]     = useState(null);
+  const chatEndRef                = useRef(null);
+  const textareaRef               = useRef(null);
+
+  useEffect(() => {
+    // Load quick summary for the stats bar
+    fetch(`${API_BASE}/summary`)
+      .then(r => r.json())
+      .then(d => setSummary(d.summary))
+      .catch(() => {});
+  }, []);
+
+  useEffect(() => {
+    chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, [messages, loading]);
+
+  async function sendMessage(question) {
+    const q = question || input.trim();
+    if (!q || loading) return;
+    setInput("");
+    setMessages(prev => [...prev, { role: "user", content: q }]);
+    setLoading(true);
+    try {
+      const res = await fetch(`${API_BASE}/query`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ question: q }),
+      });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const data = await res.json();
+      setMessages(prev => [
+        ...prev,
+        {
+          role: "ai",
+          content: data.answer,
+          toolCalls: data.tool_calls || [],
+        },
+      ]);
+    } catch (err) {
+      setMessages(prev => [
+        ...prev,
+        { role: "ai", content: `Error: ${err.message}. Is the backend running?` },
+      ]);
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  function handleKey(e) {
+    if (e.key === "Enter" && !e.shiftKey) {
+      e.preventDefault();
+      sendMessage();
+    }
+  }
+
+  const totalRev = summary
+    ? summary.reduce((s, r) => s + parseFloat(r.total_revenue), 0)
+    : null;
+
+  return (
+    <>
+      <header>
+        <div>
+          <div className="logo">RetailIQ</div>
+          <div className="tagline">AI-powered retail sales analyst</div>
+        </div>
+      </header>
+
+      {summary && (
+        <div className="stats-bar">
+          {totalRev !== null && (
+            <StatChip
+              label="Total Revenue"
+              value={`₹${(totalRev / 100000).toFixed(1)}L`}
+            />
+          )}
+          {summary.map(r => (
+            <StatChip
+              key={r.region}
+              label={r.region}
+              value={`₹${(parseFloat(r.total_revenue) / 100000).toFixed(1)}L`}
+            />
+          ))}
+        </div>
+      )}
+
+      <div className="layout">
+        <aside className="sidebar">
+          <h3>Sample Queries</h3>
+          {SAMPLE_QUERIES.map((q, i) => (
+            <button
+              key={i}
+              className="sample-query"
+              onClick={() => sendMessage(q)}
+              disabled={loading}
+            >
+              {q}
+            </button>
+          ))}
+        </aside>
+
+        <main>
+          <div className="chat-area">
+            {messages.length === 0 && !loading && (
+              <div className="welcome">
+                <h2>Ask anything about your sales</h2>
+                <p>
+                  I can query your sales database, find trends, compare stores and
+                  regions, spot anomalies, and give you plain-English insights.
+                  <br /><br />
+                  Try a sample query on the left, or type your own below.
+                </p>
+              </div>
+            )}
+
+            {messages.map((msg, i) => (
+              <Message key={i} msg={msg} />
+            ))}
+
+            {loading && <Thinking />}
+            <div ref={chatEndRef} />
+          </div>
+
+          <div className="input-bar">
+            <textarea
+              ref={textareaRef}
+              rows={1}
+              placeholder="Ask a question about your retail sales data…"
+              value={input}
+              onChange={e => setInput(e.target.value)}
+              onKeyDown={handleKey}
+              disabled={loading}
+            />
+            <button
+              className="send-btn"
+              onClick={() => sendMessage()}
+              disabled={loading || !input.trim()}
+            >
+              {loading ? "Thinking…" : "Ask ↗"}
+            </button>
+          </div>
+        </main>
+      </div>
+    </>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+</script>
+</body>
+</html>
