@@ -7,10 +7,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libpq-dev gcc \
     && rm -rf /var/lib/apt/lists/*
 
-COPY backend/requirements.txt .
+COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY backend/ .
+COPY . .
 
 # Railway injects $PORT at runtime; default to 8000 locally
 ENV PORT=8000
