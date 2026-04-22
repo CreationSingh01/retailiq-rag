@@ -8,6 +8,7 @@ Two responsibilities:
 
 import csv
 import os
+import time
 from itertools import groupby
 
 import voyageai
@@ -21,21 +22,41 @@ from database import (
 
 load_dotenv()
 
-# Voyage AI client — uses VOYAGE_API_KEY env var by default,
-# but Anthropic re-exports Voyage under ANTHROPIC_API_KEY.
-# voyageai>=0.3 also accepts an explicit api_key kwarg.
-_voyage = voyageai.Client(api_key=os.environ.get("VOYAGE_API_KEY") or os.environ["ANTHROPIC_API_KEY"])
+_voyage = voyageai.Client(
+    api_key=(
+        os.environ.get("VOYAGE_AI_API_KEY")
+        or os.environ.get("VOYAGE_API_KEY")
+        or os.environ["ANTHROPIC_API_KEY"]
+    )
+)
 
-EMBED_MODEL = "voyage-3"   # 1536 dimensions
-CHUNK_SIZE_WEEKS = 1       # one week per chunk per store per category
+EMBED_MODEL = "voyage-3"   # 1024 dimensions
+BATCH_SIZE = 20            # texts per Voyage AI call (keeps us within 10K TPM)
+MIN_CALL_INTERVAL = 21     # seconds between calls at 3 RPM (60s / 3 + 1s buffer)
 
 
 # ---------------------------------------------------------------------------
-# Embedding helper
+# Embedding helpers
 # ---------------------------------------------------------------------------
+
+def _embed_batched(texts: list[str], input_type: str = "document") -> list[list[float]]:
+    """Embed a list of texts in rate-limited batches, returning one vector per text."""
+    all_embeddings: list[list[float]] = []
+    for i in range(0, len(texts), BATCH_SIZE):
+        batch = texts[i : i + BATCH_SIZE]
+        t0 = time.monotonic()
+        result = _voyage.embed(batch, model=EMBED_MODEL, input_type=input_type)
+        all_embeddings.extend(result.embeddings)
+        elapsed = time.monotonic() - t0
+        if i + BATCH_SIZE < len(texts):
+            wait = max(0.0, MIN_CALL_INTERVAL - elapsed)
+            if wait > 0:
+                print(f"  Rate-limit pause {wait:.1f}s after batch {i // BATCH_SIZE + 1}…")
+                time.sleep(wait)
+    return all_embeddings
+
 
 def embed_text(text: str) -> list[float]:
-    """Return a 1536-d embedding using Voyage AI's voyage-3 model."""
     result = _voyage.embed([text], model=EMBED_MODEL, input_type="document")
     return result.embeddings[0]
 
@@ -54,27 +75,27 @@ def ingest_csv(path: str):
         reader = csv.DictReader(f)
         for r in reader:
             rows.append({
-                "store_id":        r["store_id"],
-                "store_name":      r["store_name"],
-                "region":          r["region"],
-                "date":            r["date"],
-                "product_category": r["product_category"],
-                "units_sold":      int(r["units_sold"]),
-                "revenue":         float(r["revenue"]),
-                "abv":             float(r["abv"]),
+                "store_id":          r["store_id"],
+                "store_name":        r["store_name"],
+                "region":            r["region"],
+                "date":              r["date"],
+                "product_category":  r["product_category"],
+                "units_sold":        int(r["units_sold"]),
+                "revenue":           float(r["revenue"]),
+                "abv":               float(r["abv"]),
             })
 
     upsert_sales_rows(rows)
     print(f"Inserted {len(rows)} sales rows.")
 
-    # Build chunks grouped by (store_id, product_category, date)
-    keyfn = lambda r: (r["store_id"], r["product_category"], r["date"])
-    sorted_rows = sorted(rows, key=keyfn)
+    # ── collect all chunks before embedding ──────────────────────────────────
+    chunks: list[tuple[str, dict]] = []  # (text, metadata)
 
-    chunks_created = 0
-    for (store_id, category, week_date), group in groupby(sorted_rows, key=keyfn):
-        items = list(group)
-        row = items[0]
+    keyfn = lambda r: (r["store_id"], r["product_category"], r["date"])
+    for (store_id, category, week_date), group in groupby(
+        sorted(rows, key=keyfn), key=keyfn
+    ):
+        row = next(iter(group))
         chunk_text = (
             f"Store: {row['store_name']} ({store_id}), Region: {row['region']}\n"
             f"Week of: {week_date}\n"
@@ -90,14 +111,12 @@ def ingest_csv(path: str):
             "date": week_date,
             "category": category,
         }
-        embedding = embed_text(chunk_text)
-        upsert_chunk(chunk_text, metadata, embedding)
-        chunks_created += 1
+        chunks.append((chunk_text, metadata))
 
-    # Also create store-level weekly rollup chunks
     store_week_key = lambda r: (r["store_id"], r["date"])
-    sorted_rows2 = sorted(rows, key=store_week_key)
-    for (store_id, week_date), group in groupby(sorted_rows2, key=store_week_key):
+    for (store_id, week_date), group in groupby(
+        sorted(rows, key=store_week_key), key=store_week_key
+    ):
         items = list(group)
         row = items[0]
         total_rev = sum(i["revenue"] for i in items)
@@ -119,11 +138,18 @@ def ingest_csv(path: str):
             "date": week_date,
             "type": "weekly_summary",
         }
-        embedding = embed_text(chunk_text)
-        upsert_chunk(chunk_text, metadata, embedding)
-        chunks_created += 1
+        chunks.append((chunk_text, metadata))
 
-    print(f"Created {chunks_created} embedded chunks.")
+    # ── batch embed all chunks ────────────────────────────────────────────────
+    print(f"Embedding {len(chunks)} chunks in batches of {BATCH_SIZE}…")
+    texts = [c[0] for c in chunks]
+    embeddings = _embed_batched(texts, input_type="document")
+
+    # ── upsert ───────────────────────────────────────────────────────────────
+    for (chunk_text, metadata), embedding in zip(chunks, embeddings):
+        upsert_chunk(chunk_text, metadata, embedding)
+
+    print(f"Created {len(chunks)} embedded chunks.")
 
 
 # ---------------------------------------------------------------------------

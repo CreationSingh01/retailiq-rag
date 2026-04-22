@@ -9,22 +9,26 @@ import os
 import psycopg2
 import psycopg2.extras
 from psycopg2.extras import RealDictCursor, Json as PgJson
+from pgvector.psycopg2 import register_vector
 from supabase import create_client, Client
 from dotenv import load_dotenv
 
 load_dotenv()
 
 SUPABASE_URL = os.environ["SUPABASE_URL"]
-SUPABASE_KEY = os.environ["SUPABASE_SERVICE_ROLE_KEY"]
+# New Supabase key format (replaces service_role key)
+SUPABASE_SECRET_KEY = os.environ["SUPABASE_SECRET_KEY"]
 DATABASE_URL = os.environ["DATABASE_URL"]  # postgres://... direct connection
 
 
 def get_supabase() -> Client:
-    return create_client(SUPABASE_URL, SUPABASE_KEY)
+    return create_client(SUPABASE_URL, SUPABASE_SECRET_KEY)
 
 
 def get_pg_conn():
-    return psycopg2.connect(DATABASE_URL, cursor_factory=RealDictCursor)
+    conn = psycopg2.connect(DATABASE_URL, cursor_factory=RealDictCursor)
+    register_vector(conn)
+    return conn
 
 
 # ---------------------------------------------------------------------------
@@ -58,7 +62,7 @@ CREATE TABLE IF NOT EXISTS sales_chunks (
     id          BIGSERIAL PRIMARY KEY,
     chunk_text  TEXT NOT NULL,
     metadata    JSONB DEFAULT '{}',
-    embedding   vector(1536),
+    embedding   vector(1024),
     created_at  TIMESTAMPTZ DEFAULT NOW()
 );
 
@@ -69,7 +73,7 @@ CREATE INDEX IF NOT EXISTS idx_chunks_embedding
 
 MATCH_CHUNKS_FUNCTION = """
 CREATE OR REPLACE FUNCTION match_sales_chunks(
-    query_embedding vector(1536),
+    query_embedding vector(1024),
     match_threshold FLOAT DEFAULT 0.70,
     match_count     INT   DEFAULT 8
 )
@@ -142,12 +146,13 @@ def upsert_chunk(chunk_text: str, metadata: dict, embedding: list[float]):
     conn = get_pg_conn()
     try:
         with conn.cursor() as cur:
+            vec_str = "[" + ",".join(str(x) for x in embedding) + "]"
             cur.execute(
                 """
                 INSERT INTO sales_chunks (chunk_text, metadata, embedding)
-                VALUES (%s, %s, %s)
+                VALUES (%s, %s, %s::vector)
                 """,
-                (chunk_text, PgJson(metadata), embedding),
+                (chunk_text, PgJson(metadata), vec_str),
             )
         conn.commit()
     finally:
@@ -158,9 +163,10 @@ def similarity_search(query_embedding: list[float], match_count: int = 8) -> lis
     conn = get_pg_conn()
     try:
         with conn.cursor() as cur:
+            vec_str = "[" + ",".join(str(x) for x in query_embedding) + "]"
             cur.execute(
-                "SELECT * FROM match_sales_chunks(%s, 0.65, %s)",
-                (query_embedding, match_count),
+                "SELECT * FROM match_sales_chunks(%s::vector, 0.30, %s)",
+                (vec_str, match_count),
             )
             return cur.fetchall()
     finally:

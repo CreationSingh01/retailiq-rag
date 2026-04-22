@@ -12,7 +12,8 @@ Endpoints:
 import json
 import os
 import re
-from typing import Any
+from decimal import Decimal
+from typing import Any, Optional
 
 import anthropic
 from dotenv import load_dotenv
@@ -188,7 +189,7 @@ def run_agent(user_question: str) -> dict:
                 tool_results.append({
                     "type": "tool_result",
                     "tool_use_id": block.id,
-                    "content": json.dumps(result),
+                    "content": json.dumps(result, default=lambda o: float(o) if isinstance(o, Decimal) else str(o)),
                 })
             messages.append({"role": "user", "content": tool_results})
             continue
@@ -208,7 +209,7 @@ class QueryRequest(BaseModel):
 
 
 class IngestRequest(BaseModel):
-    csv_path: str = "/app/data/sample_sales_data.csv"
+    csv_path: str = "/workspaces/retailiq-rag/data/sample_sales_data.csv"
 
 
 # ---------------------------------------------------------------------------
@@ -234,7 +235,9 @@ def query(req: QueryRequest):
 
 
 @app.post("/ingest")
-def ingest(req: IngestRequest):
+def ingest(req: Optional[IngestRequest] = None):
+    if req is None:
+        req = IngestRequest()
     try:
         ingest_csv(req.csv_path)
         return {"status": "success", "csv_path": req.csv_path}
