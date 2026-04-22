@@ -19,12 +19,20 @@ import anthropic
 from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import FileResponse
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
 from database import bootstrap_schema, run_sql_query
 from rag_pipeline import format_context, ingest_csv, retrieve_context
 
 load_dotenv()
+
+# In the container: /app/frontend/ (COPY frontend/ ./frontend/ in Dockerfile)
+# In dev: ../frontend relative to backend/
+_here = os.path.dirname(os.path.abspath(__file__))
+FRONTEND_DIR = os.path.join(_here, "frontend") if os.path.isdir(os.path.join(_here, "frontend")) \
+    else os.path.join(_here, "..", "frontend")
 
 app = FastAPI(title="RetailIQ", version="1.0.0")
 
@@ -34,6 +42,8 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+app.mount("/static", StaticFiles(directory=FRONTEND_DIR), name="static")
 
 _client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
 MODEL = "claude-sonnet-4-6"
@@ -219,6 +229,11 @@ class IngestRequest(BaseModel):
 @app.on_event("startup")
 async def startup():
     bootstrap_schema()
+
+
+@app.get("/")
+def serve_frontend():
+    return FileResponse(os.path.join(FRONTEND_DIR, "index.html"))
 
 
 @app.get("/health")
