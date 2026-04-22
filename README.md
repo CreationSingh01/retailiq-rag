@@ -1,5 +1,7 @@
 # RetailIQ — AI-Powered Retail Sales Analyst
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Railway-6c63ff?style=for-the-badge&logo=railway)](https://retailiq-rag-production.up.railway.app)
+
 Ask plain-English questions about your store's sales data and get instant, data-backed answers.
 
 **Stack:** FastAPI · Supabase (pgvector) · Anthropic Claude (tool_use) · React (CDN, no build)
