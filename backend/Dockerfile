@@ -12,9 +12,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY backend/ .
 
-# Copy sample data so ingest can run inside container
-COPY data/ /app/data/
-
 # Railway injects $PORT at runtime; default to 8000 locally
 ENV PORT=8000
 EXPOSE ${PORT}
