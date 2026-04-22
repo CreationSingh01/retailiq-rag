@@ -222,7 +222,7 @@
 <script type="text/babel">
 const { useState, useRef, useEffect } = React;
 
-const API_BASE = window.RETAILIQ_API || "http://localhost:8000";
+const API_BASE = window.RETAILIQ_API || window.location.origin;
 
 const SAMPLE_QUERIES = [
   "Which stores have declining ABV this month?",
