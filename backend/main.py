@@ -10,14 +10,19 @@ Endpoints:
 """
 
 import json
+import logging
 import os
 import re
+import traceback
 from decimal import Decimal
 from typing import Any, Optional
 
 import anthropic
 from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException
+
+logging.basicConfig(level=logging.INFO, format="%(levelname)s %(name)s: %(message)s")
+logger = logging.getLogger("retailiq")
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
@@ -148,8 +153,12 @@ def execute_tool(tool_name: str, tool_input: dict) -> Any:
     elif tool_name == "get_rag_context":
         query = tool_input.get("query", "")
         k = tool_input.get("k", 8)
-        chunks = retrieve_context(query, k=k)
-        return {"context": format_context(chunks)}
+        try:
+            chunks = retrieve_context(query, k=k)
+            return {"context": format_context(chunks)}
+        except Exception as exc:
+            logger.exception("get_rag_context failed")
+            return {"error": str(exc)}
 
     return {"error": f"Unknown tool: {tool_name}"}
 
@@ -167,6 +176,7 @@ def run_agent(user_question: str) -> dict:
     tool_calls_log = []
 
     for _iteration in range(6):  # max 6 tool-use rounds
+        logger.info("Agent iteration %d — sending %d messages", _iteration, len(messages))
         response = _client.messages.create(
             model=MODEL,
             max_tokens=4096,
@@ -241,12 +251,25 @@ def health():
     return {"status": "ok", "model": MODEL}
 
 
+@app.get("/debug/env")
+def debug_env():
+    """Shows which required env vars are present (not their values) — for Railway diagnostics."""
+    keys = ["ANTHROPIC_API_KEY", "VOYAGE_API_KEY", "VOYAGE_AI_API_KEY",
+            "SUPABASE_URL", "SUPABASE_SECRET_KEY", "DATABASE_URL"]
+    return {k: ("set" if os.environ.get(k) else "MISSING") for k in keys}
+
+
 @app.post("/query")
 def query(req: QueryRequest):
     if not req.question.strip():
         raise HTTPException(status_code=400, detail="question must not be empty")
-    result = run_agent(req.question)
-    return result
+    try:
+        result = run_agent(req.question)
+        return result
+    except Exception as exc:
+        tb = traceback.format_exc()
+        logger.error("run_agent raised an exception:\n%s", tb)
+        raise HTTPException(status_code=500, detail=f"{type(exc).__name__}: {exc}")
 
 
 @app.post("/ingest")
